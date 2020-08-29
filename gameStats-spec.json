@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "gameMode": {
+      "type": "string"
+    },
+    "gameTime": {
+      "type": "number"
+    },
+    "mapName": {
+      "type": "string"
+    },
+    "mapNumber": {
+      "type": "integer"
+    },
+    "mapTerrain": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "gameMode",
+    "gameTime",
+    "mapName",
+    "mapNumber",
+    "mapTerrain"
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "canUse": {
+          "type": "boolean"
+        },
+        "consumable": {
+          "type": "boolean"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "itemID": {
+          "type": "integer"
+        },
+        "price": {
+          "type": "integer"
+        },
+        "rawDescription": {
+          "type": "string"
+        },
+        "rawDisplayName": {
+          "type": "string"
+        },
+        "slot": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "canUse",
+        "consumable",
+        "count",
+        "displayName",
+        "itemID",
+        "price",
+        "rawDescription",
+        "rawDisplayName",
+        "slot"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "canUse": {
+          "type": "boolean"
+        },
+        "consumable": {
+          "type": "boolean"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "itemID": {
+          "type": "integer"
+        },
+        "price": {
+          "type": "integer"
+        },
+        "rawDescription": {
+          "type": "string"
+        },
+        "rawDisplayName": {
+          "type": "string"
+        },
+        "slot": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "canUse",
+        "consumable",
+        "count",
+        "displayName",
+        "itemID",
+        "price",
+        "rawDescription",
+        "rawDisplayName",
+        "slot"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "canUse": {
+          "type": "boolean"
+        },
+        "consumable": {
+          "type": "boolean"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "itemID": {
+          "type": "integer"
+        },
+        "price": {
+          "type": "integer"
+        },
+        "rawDescription": {
+          "type": "string"
+        },
+        "rawDisplayName": {
+          "type": "string"
+        },
+        "slot": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "canUse",
+        "consumable",
+        "count",
+        "displayName",
+        "itemID",
+        "price",
+        "rawDescription",
+        "rawDisplayName",
+        "slot"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "canUse": {
+          "type": "boolean"
+        },
+        "consumable": {
+          "type": "boolean"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "itemID": {
+          "type": "integer"
+        },
+        "price": {
+          "type": "integer"
+        },
+        "rawDescription": {
+          "type": "string"
+        },
+        "rawDisplayName": {
+          "type": "string"
+        },
+        "slot": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "canUse",
+        "consumable",
+        "count",
+        "displayName",
+        "itemID",
+        "price",
+        "rawDescription",
+        "rawDisplayName",
+        "slot"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "canUse": {
+          "type": "boolean"
+        },
+        "consumable": {
+          "type": "boolean"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "itemID": {
+          "type": "integer"
+        },
+        "price": {
+          "type": "integer"
+        },
+        "rawDescription": {
+          "type": "string"
+        },
+        "rawDisplayName": {
+          "type": "string"
+        },
+        "slot": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "canUse",
+        "consumable",
+        "count",
+        "displayName",
+        "itemID",
+        "price",
+        "rawDescription",
+        "rawDisplayName",
+        "slot"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "canUse": {
+          "type": "boolean"
+        },
+        "consumable": {
+          "type": "boolean"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "itemID": {
+          "type": "integer"
+        },
+        "price": {
+          "type": "integer"
+        },
+        "rawDescription": {
+          "type": "string"
+        },
+        "rawDisplayName": {
+          "type": "string"
+        },
+        "slot": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "canUse",
+        "consumable",
+        "count",
+        "displayName",
+        "itemID",
+        "price",
+        "rawDescription",
+        "rawDisplayName",
+        "slot"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "canUse": {
+          "type": "boolean"
+        },
+        "consumable": {
+          "type": "boolean"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "itemID": {
+          "type": "integer"
+        },
+        "price": {
+          "type": "integer"
+        },
+        "rawDescription": {
+          "type": "string"
+        },
+        "rawDisplayName": {
+          "type": "string"
+        },
+        "slot": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "canUse",
+        "consumable",
+        "count",
+        "displayName",
+        "itemID",
+        "price",
+        "rawDescription",
+        "rawDisplayName",
+        "slot"
+      ]
+    }
+  ]
+}

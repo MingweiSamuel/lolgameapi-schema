@@ -9,6 +9,16 @@ function camelCase(str) {
         .join('');
 }
 
+/**
+ * Returns intersection of two arrays.
+ * @param {any[]} a
+ * @param {any[]} b
+ * @returns {any[]}
+ */
+function intersect(a, b) {
+    return a.filter(x => b.includes(x));
+}
+
 // suB-type, suPer-type.
 function isSubType(b, p) {
     if (b === p)
@@ -16,12 +26,19 @@ function isSubType(b, p) {
     if (!p || !b)
         return false;
 
+    // Special handler for integers subset of numbers.
+    if ('number' === p.type && 'integer' === b.type)
+        return true;
+
     if (b.type !== p.type)
         return false;
     if (b.$ref !== p.$ref)
         return false;
 
     if ('array' === b.type) {
+        // Jail-free card if subtype array is empty.
+        if (0 === b.items.length)
+            return true;
         if (b.items.length !== p.items.length)
             return false;
         for (let i = 0; i < b.items.length; i++) {
@@ -43,17 +60,37 @@ function isSubType(b, p) {
     return true;
 }
 
-function combineTypes(b, p) {
-    // const out = { };
+function combineTypes(a, b) {
+    const out = { ...a, ...b };
 
-    if (b.type !== p.type)
-        throw Error(`B type ${b.type} and P type ${p.type} do not match.`);
-    if (b.$ref !== p.$ref)
-        throw Error(`B $ref ${b.$ref} and P $ref ${p.$ref} do not match.`);
-
-    if ('object' === p.type) {
-        p.required = p.required.filter(x => b.required.includes(x));
+    if (a.$ref) {
+        if (a.$ref !== b.$ref)
+            throw Error(`A $ref ${a.$ref} and B $ref ${b.$ref} do not match.`);
+        return out;
     }
+    if ('object' !== a.type)
+        throw Error(`A type is not object: ${a.type}`);
+    if ('object' !== b.type)
+        throw Error(`B type is not object: ${b.type}`);
+
+    out.properties = { ...a.properties, ...b.properties };
+    out.required = intersect(a.required, b.required);
+
+    {
+        const sharedProps = intersect(Object.keys(a.properties), Object.keys(b.properties));
+        for (const sharedProp of sharedProps) {
+            if (isSubType(a.properties[sharedProp], b.properties[sharedProp])) {
+                out.properties[sharedProp] = b.properties[sharedProp];
+            }
+            else if (isSubType(b.properties[sharedProp], a.properties[sharedProp])) {
+                out.properties[sharedProp] = a.properties[sharedProp];
+            }
+            else
+                throw Error(`Conflicting shared property when trying to combine objects: ${sharedProp}.`);
+        }
+    }
+
+    return out;
 }
 
 function jsonToJsonSchema(input) {
@@ -148,9 +185,8 @@ function jsonSchemaToTypes(input, name) {
             }
 
             // If this type already exists.
-            for (const id of Object.keys(types)) {
+            for (const [ id, typeSpec ] of Object.entries(types)) {
                 {
-                    const typeSpec = types[id];
                     const typeNameArr = typeNames[id];
 
                     const pathMatches = typeNameArr.some(otherTypePath => {
@@ -165,16 +201,16 @@ function jsonSchemaToTypes(input, name) {
                     });
                     // Only try subtyping if path matches.
                     if (pathMatches) {
-                        if (isSubType(input, typeSpec)) {
-                            combineTypes(input, typeSpec);
-                        }
-                        else if (isSubType(typeSpec, input)) {
-                            types[id] = combineTypes(typeSpec, input);
-                        }
-                        else {
-                            // Not a sub type.
-                            continue;
-                        }
+                        // if (isSubType(input, typeSpec)) {
+                        //     combineTypes(input, typeSpec);
+                        // }
+                        // else if (isSubType(typeSpec, input)) {
+                        types[id] = combineTypes(typeSpec, input);
+                        // }
+                        // else {
+                        //     // Not a sub type.
+                        //     continue;
+                        // }
                     }
                     else if (isSubType(input, typeSpec) && isSubType(typeSpec, input)) {
                         // Are the exact same type, combine them.
@@ -186,7 +222,7 @@ function jsonSchemaToTypes(input, name) {
                 }
                 (typeNames[id] || (typeNames[id] = [])).push(names);
                 return {
-                    $ref: id,
+                    $ref: `#/components/schemas/${id}`,
                 };
             }
 
@@ -195,7 +231,7 @@ function jsonSchemaToTypes(input, name) {
             (typeNames[id] || (typeNames[id] = [])).push(names);
             types[id] = input;
             return {
-                $ref: id,
+                $ref: `#/components/schemas/${id}`,
             };
         }
         return input;
@@ -210,28 +246,45 @@ function jsonSchemaToTypes(input, name) {
         console.log(name, camelCase(name));
     }
 
+    const out = {};
+    Object.keys(types).forEach(id => {
+        const names = typeNames[id]
+            .map(name => name
+                .map(x => x.toString())
+                .map(camelCase)
+                .join(''));
+        const name = names[0];
+        // out[name] = {
+        //     id,
+        //     names,
+        //     type: types[id]
+        // };
+        out[id + name] = types[id];
+    });
+    return out;
     // return Object.keys(types).map(id => {
     //     return {
     //         names: typeNames[id],
     //         type: types[id],
     //     }
     // });
-    return { types, typeNames };
+    // return { types, typeNames };
 }
 
 const util = require('util');
 const fs = require('fs');
 const writeFileAsync = util.promisify(fs.writeFile);
 
-const json = require('./allgamedata');
+const inputName = 'allGameData';
+const json = require(`./${inputName}`);
 const jsonSchema = jsonToJsonSchema(json);
 {
     const jsonSchemaStr = JSON.stringify(jsonSchema, null, 2);
-    writeFileAsync('./allgamedata-spec.json', jsonSchemaStr);
+    writeFileAsync(`./${inputName}-spec.json`, jsonSchemaStr);
 }
 
-const jsonTypes = jsonSchemaToTypes(jsonSchema, 'allGameData');
+const jsonTypes = jsonSchemaToTypes(jsonSchema, inputName);
 {
     const jsonTypesStr = JSON.stringify(jsonTypes, null, 2);
-    writeFileAsync('./allgamedata-types.json', jsonTypesStr);
+    writeFileAsync(`./${inputName}-types.json`, jsonTypesStr);
 }

@@ -1,0 +1,71 @@
+{
+  "10000EventDataEvents0": {
+    "type": "object",
+    "properties": {
+      "EventID": {
+        "type": "integer"
+      },
+      "EventName": {
+        "type": "string"
+      },
+      "EventTime": {
+        "type": "number"
+      },
+      "KillerName": {
+        "type": "string"
+      },
+      "TurretKilled": {
+        "type": "string"
+      },
+      "Assisters": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "InhibKilled": {
+        "type": "string"
+      },
+      "DragonType": {
+        "type": "string"
+      },
+      "Stolen": {
+        "type": "string"
+      },
+      "VictimName": {
+        "type": "string"
+      },
+      "KillStreak": {
+        "type": "integer"
+      },
+      "Acer": {
+        "type": "string"
+      },
+      "AcingTeam": {
+        "type": "string"
+      },
+      "Result": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "EventID",
+      "EventName",
+      "EventTime"
+    ]
+  },
+  "10001EventData": {
+    "type": "object",
+    "properties": {
+      "Events": {
+        "type": "array",
+        "items": {
+          "$ref": "10000"
+        }
+      }
+    },
+    "required": [
+      "Events"
+    ]
+  }
+}

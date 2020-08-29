@@ -1,0 +1,628 @@
+{
+  "Events": [
+    {
+      "EventID": 0,
+      "EventName": "GameStart",
+      "EventTime": 0.501102391039012
+    },
+    {
+      "EventID": 0,
+      "EventName": "MinionsSpawning",
+      "EventTime": 0.501102391039012
+    },
+    {
+      "EventID": 0,
+      "EventName": "FirstBrick",
+      "EventTime": 0.501102391039012,
+      "KillerName": "Riot Tuxedo"
+    },
+    {
+      "EventID": 0,
+      "EventName": "TurretKilled",
+      "EventTime": 0.501102391039012,
+      "TurretKilled": "Turret_T2_L_03_A",
+      "KillerName": "Riot Tuxedo",
+      "Assisters": [
+        "Player 1"
+      ]
+    },
+    {
+      "EventID": 0,
+      "EventName": "InhibKilled",
+      "EventTime": 0.501102391039012,
+      "InhibKilled": "Barracks_T2_R1",
+      "KillerName": "Riot Tuxedo",
+      "Assisters": [
+        "Player 1"
+      ]
+    },
+    {
+      "EventID": 0,
+      "EventName": "DragonKill",
+      "EventTime": 0.501102391039012,
+      "DragonType": "Earth",
+      "Stolen": "False",
+      "KillerName": "Riot Tuxedo",
+      "Assisters": [
+        "Player 1"
+      ]
+    },
+    {
+      "EventID": 0,
+      "EventName": "DragonKill",
+      "EventTime": 0.501102391039012,
+      "DragonType": "Elder",
+      "Stolen": "False",
+      "KillerName": "Riot Tuxedo",
+      "Assisters": [
+        "Player 1"
+      ]
+    },
+    {
+      "EventID": 0,
+      "EventName": "HeraldKill",
+      "EventTime": 0.501102391039012,
+      "Stolen": "False",
+      "KillerName": "Riot Tuxedo",
+      "Assisters": [
+        "Player 1"
+      ]
+    },
+    {
+      "EventID": 0,
+      "EventName": "BaronKill",
+      "EventTime": 0.501102391039012,
+      "Stolen": "False",
+      "KillerName": "Riot Tuxedo",
+      "Assisters": [
+        "Player 1"
+      ]
+    },
+    {
+      "EventID": 0,
+      "EventName": "ChampionKill",
+      "EventTime": 0.501102391039012,
+      "VictimName": "Riot Gene",
+      "KillerName": "Riot Tuxedo",
+      "Assisters": [
+        "Player 1"
+      ]
+    },
+    {
+      "EventID": 0,
+      "EventName": "Multikill",
+      "EventTime": 0.501102391039012,
+      "KillerName": "Riot Tuxedo",
+      "KillStreak": 2
+    },
+    {
+      "EventID": 0,
+      "EventName": "Multikill",
+      "EventTime": 0.501102391039012,
+      "KillerName": "Riot Tuxedo",
+      "KillStreak": 3
+    },
+    {
+      "EventID": 0,
+      "EventName": "Multikill",
+      "EventTime": 0.501102391039012,
+      "KillerName": "Riot Tuxedo",
+      "KillStreak": 4
+    },
+    {
+      "EventID": 0,
+      "EventName": "Multikill",
+      "EventTime": 0.501102391039012,
+      "KillerName": "Riot Tuxedo",
+      "KillStreak": 5
+    },
+    {
+      "EventID": 0,
+      "EventName": "Ace",
+      "EventTime": 0.501102391039012,
+      "Acer": "Riot Tuxedo",
+      "AcingTeam": "ORDER"
+    },
+    {
+      "EventID": 0,
+      "EventName": "GameStart",
+      "EventTime": 780.1965942382812
+    },
+    {
+      "Assisters": [],
+      "EventID": 1,
+      "EventName": "ChampionKill",
+      "EventTime": 791.5758666992188,
+      "KillerName": "Slyndri",
+      "VictimName": "ˉˉˉSplash"
+    },
+    {
+      "Assisters": [
+        "DONGERZX"
+      ],
+      "EventID": 2,
+      "EventName": "ChampionKill",
+      "EventTime": 867.5841674804688,
+      "KillerName": "Roi DEMON",
+      "VictimName": "Steverino"
+    },
+    {
+      "Assisters": [
+        "Steverino"
+      ],
+      "EventID": 3,
+      "EventName": "ChampionKill",
+      "EventTime": 868.8744506835938,
+      "KillerName": "ΨΞΞΞΞΞΞΨ",
+      "VictimName": "Roi DEMON"
+    },
+    {
+      "Assisters": [
+        "ˉˉˉSplash"
+      ],
+      "EventID": 4,
+      "EventName": "ChampionKill",
+      "EventTime": 873.4373168945312,
+      "KillerName": "ZERGSTINGGGGGGGG",
+      "VictimName": "RYL Kunduz"
+    },
+    {
+      "Assisters": [],
+      "EventID": 5,
+      "EventName": "ChampionKill",
+      "EventTime": 884.3974609375,
+      "KillerName": "ΨΞΞΞΞΞΞΨ",
+      "VictimName": "DONGERZX"
+    },
+    {
+      "Assisters": [],
+      "EventID": 6,
+      "EventName": "TurretKilled",
+      "EventTime": 916.29638671875,
+      "KillerName": "ΨΞΞΞΞΞΞΨ",
+      "TurretKilled": "Turret_T2_L_03_A"
+    },
+    {
+      "Assisters": [
+        "RYL Kunduz",
+        "my future"
+      ],
+      "EventID": 7,
+      "EventName": "ChampionKill",
+      "EventTime": 917.0347290039062,
+      "KillerName": "Slyndri",
+      "VictimName": "ZERGSTINGGGGGGGG"
+    },
+    {
+      "Assisters": [
+        "Slyndri"
+      ],
+      "EventID": 8,
+      "EventName": "ChampionKill",
+      "EventTime": 918.6286010742188,
+      "KillerName": "RYL Kunduz",
+      "VictimName": "ˉˉˉSplash"
+    },
+    {
+      "Assisters": [
+        "ZERGSTINGGGGGGGG"
+      ],
+      "EventID": 9,
+      "EventName": "ChampionKill",
+      "EventTime": 919.3186645507812,
+      "KillerName": "IWantItAllNow",
+      "VictimName": "Slyndri"
+    },
+    {
+      "Assisters": [
+        "Slyndri"
+      ],
+      "EventID": 10,
+      "EventName": "ChampionKill",
+      "EventTime": 921.337158203125,
+      "KillerName": "RYL Kunduz",
+      "VictimName": "IWantItAllNow"
+    },
+    {
+      "EventID": 11,
+      "EventName": "Multikill",
+      "EventTime": 921.337158203125,
+      "KillStreak": 2,
+      "KillerName": "RYL Kunduz"
+    },
+    {
+      "Assisters": [
+        "IWantItAllNow",
+        "ˉˉˉSplash",
+        "ZERGSTINGGGGGGGG"
+      ],
+      "EventID": 12,
+      "EventName": "ChampionKill",
+      "EventTime": 927.1830444335938,
+      "KillerName": "Steverino",
+      "VictimName": "RYL Kunduz"
+    },
+    {
+      "Assisters": [],
+      "EventID": 13,
+      "EventName": "ChampionKill",
+      "EventTime": 932.8058471679688,
+      "KillerName": "Steverino",
+      "VictimName": "my future"
+    },
+    {
+      "EventID": 14,
+      "EventName": "Multikill",
+      "EventTime": 932.8058471679688,
+      "KillStreak": 2,
+      "KillerName": "Steverino"
+    },
+    {
+      "Assisters": [],
+      "EventID": 15,
+      "EventName": "TurretKilled",
+      "EventTime": 954.7011108398438,
+      "KillerName": "Minion_T100L0S29N0042",
+      "TurretKilled": "Turret_T2_R_03_A"
+    },
+    {
+      "Assisters": [],
+      "EventID": 16,
+      "EventName": "ChampionKill",
+      "EventTime": 962.7421264648438,
+      "KillerName": "DONGERZX",
+      "VictimName": "ΨΞΞΞΞΞΞΨ"
+    },
+    {
+      "Assisters": [
+        "Roi DEMON",
+        "DONGERZX"
+      ],
+      "EventID": 17,
+      "EventName": "ChampionKill",
+      "EventTime": 984.068359375,
+      "KillerName": "RYL Kunduz",
+      "VictimName": "ˉˉˉSplash"
+    },
+    {
+      "Assisters": [
+        "Roi DEMON"
+      ],
+      "EventID": 18,
+      "EventName": "ChampionKill",
+      "EventTime": 990.3606567382812,
+      "KillerName": "RYL Kunduz",
+      "VictimName": "IWantItAllNow"
+    },
+    {
+      "EventID": 19,
+      "EventName": "Multikill",
+      "EventTime": 990.3606567382812,
+      "KillStreak": 2,
+      "KillerName": "RYL Kunduz"
+    },
+    {
+      "Assisters": [
+        "my future"
+      ],
+      "EventID": 20,
+      "EventName": "ChampionKill",
+      "EventTime": 993.4194946289062,
+      "KillerName": "Slyndri",
+      "VictimName": "Steverino"
+    },
+    {
+      "Assisters": [],
+      "EventID": 21,
+      "EventName": "ChampionKill",
+      "EventTime": 1026.92041015625,
+      "KillerName": "ΨΞΞΞΞΞΞΨ",
+      "VictimName": "Slyndri"
+    },
+    {
+      "Assisters": [],
+      "EventID": 22,
+      "EventName": "ChampionKill",
+      "EventTime": 1030.9383544921875,
+      "KillerName": "ΨΞΞΞΞΞΞΨ",
+      "VictimName": "my future"
+    },
+    {
+      "EventID": 23,
+      "EventName": "Multikill",
+      "EventTime": 1030.9383544921875,
+      "KillStreak": 2,
+      "KillerName": "ΨΞΞΞΞΞΞΨ"
+    },
+    {
+      "Assisters": [],
+      "EventID": 24,
+      "EventName": "ChampionKill",
+      "EventTime": 1048.627685546875,
+      "KillerName": "Roi DEMON",
+      "VictimName": "ΨΞΞΞΞΞΞΨ"
+    },
+    {
+      "Assisters": [
+        "ΨΞΞΞΞΞΞΨ"
+      ],
+      "EventID": 25,
+      "EventName": "ChampionKill",
+      "EventTime": 1050.07568359375,
+      "KillerName": "ZERGSTINGGGGGGGG",
+      "VictimName": "Roi DEMON"
+    },
+    {
+      "Assisters": [],
+      "EventID": 26,
+      "EventName": "TurretKilled",
+      "EventTime": 1073.48388671875,
+      "KillerName": "ˉˉˉSplash",
+      "TurretKilled": "Turret_T2_C_05_A"
+    },
+    {
+      "Assisters": [
+        "my future"
+      ],
+      "EventID": 27,
+      "EventName": "ChampionKill",
+      "EventTime": 1089.094482421875,
+      "KillerName": "Slyndri",
+      "VictimName": "ˉˉˉSplash"
+    },
+    {
+      "Assisters": [],
+      "EventID": 28,
+      "EventName": "ChampionKill",
+      "EventTime": 1111.7646484375,
+      "KillerName": "DONGERZX",
+      "VictimName": "Steverino"
+    },
+    {
+      "Assisters": [
+        "Slyndri",
+        "RYL Kunduz"
+      ],
+      "EventID": 29,
+      "EventName": "ChampionKill",
+      "EventTime": 1120.315185546875,
+      "KillerName": "Roi DEMON",
+      "VictimName": "IWantItAllNow"
+    },
+    {
+      "Assisters": [
+        "Slyndri",
+        "Roi DEMON"
+      ],
+      "EventID": 30,
+      "EventName": "ChampionKill",
+      "EventTime": 1122.25390625,
+      "KillerName": "my future",
+      "VictimName": "ZERGSTINGGGGGGGG"
+    },
+    {
+      "Assisters": [
+        "RYL Kunduz"
+      ],
+      "EventID": 31,
+      "EventName": "TurretKilled",
+      "EventTime": 1146.3515625,
+      "KillerName": "my future",
+      "TurretKilled": "Turret_T1_R_03_A"
+    },
+    {
+      "Assisters": [
+        "Roi DEMON"
+      ],
+      "EventID": 32,
+      "EventName": "ChampionKill",
+      "EventTime": 1173.80078125,
+      "KillerName": "Slyndri",
+      "VictimName": "IWantItAllNow"
+    },
+    {
+      "Assisters": [
+        "ZERGSTINGGGGGGGG"
+      ],
+      "EventID": 33,
+      "EventName": "ChampionKill",
+      "EventTime": 1191.2498779296875,
+      "KillerName": "Steverino",
+      "VictimName": "RYL Kunduz"
+    },
+    {
+      "Assisters": [],
+      "EventID": 34,
+      "EventName": "ChampionKill",
+      "EventTime": 1205.3828125,
+      "KillerName": "DONGERZX",
+      "VictimName": "ˉˉˉSplash"
+    },
+    {
+      "Assisters": [
+        "my future"
+      ],
+      "EventID": 35,
+      "EventName": "ChampionKill",
+      "EventTime": 1207.1109619140625,
+      "KillerName": "Roi DEMON",
+      "VictimName": "ΨΞΞΞΞΞΞΨ"
+    },
+    {
+      "Assisters": [
+        "my future"
+      ],
+      "EventID": 36,
+      "EventName": "TurretKilled",
+      "EventTime": 1214.6224365234375,
+      "KillerName": "Roi DEMON",
+      "TurretKilled": "Turret_T1_C_05_A"
+    },
+    {
+      "Assisters": [],
+      "EventID": 37,
+      "EventName": "TurretKilled",
+      "EventTime": 1214.771484375,
+      "KillerName": "DONGERZX",
+      "TurretKilled": "Turret_T1_C_06_A"
+    },
+    {
+      "Assisters": [
+        "my future"
+      ],
+      "EventID": 38,
+      "EventName": "TurretKilled",
+      "EventTime": 1227.8798828125,
+      "KillerName": "Roi DEMON",
+      "TurretKilled": "Turret_T1_C_04_A"
+    },
+    {
+      "Assisters": [
+        "Steverino"
+      ],
+      "EventID": 39,
+      "EventName": "ChampionKill",
+      "EventTime": 1304.7598876953125,
+      "KillerName": "ΨΞΞΞΞΞΞΨ",
+      "VictimName": "RYL Kunduz"
+    },
+    {
+      "Assisters": [
+        "Slyndri"
+      ],
+      "EventID": 40,
+      "EventName": "ChampionKill",
+      "EventTime": 1309.5465087890625,
+      "KillerName": "Roi DEMON",
+      "VictimName": "ΨΞΞΞΞΞΞΨ"
+    },
+    {
+      "Assisters": [],
+      "EventID": 41,
+      "EventName": "ChampionKill",
+      "EventTime": 1375.3292236328125,
+      "KillerName": "ΨΞΞΞΞΞΞΨ",
+      "VictimName": "RYL Kunduz"
+    },
+    {
+      "Assisters": [
+        "Steverino",
+        "ZERGSTINGGGGGGGG"
+      ],
+      "EventID": 42,
+      "EventName": "ChampionKill",
+      "EventTime": 1397.1622314453125,
+      "KillerName": "ΨΞΞΞΞΞΞΨ",
+      "VictimName": "DONGERZX"
+    },
+    {
+      "Assisters": [
+        "Roi DEMON",
+        "DONGERZX"
+      ],
+      "EventID": 43,
+      "EventName": "ChampionKill",
+      "EventTime": 1405.650634765625,
+      "KillerName": "Slyndri",
+      "VictimName": "ΨΞΞΞΞΞΞΨ"
+    },
+    {
+      "Assisters": [
+        "Roi DEMON",
+        "my future"
+      ],
+      "EventID": 44,
+      "EventName": "ChampionKill",
+      "EventTime": 1414.2568359375,
+      "KillerName": "Slyndri",
+      "VictimName": "Steverino"
+    },
+    {
+      "EventID": 45,
+      "EventName": "Multikill",
+      "EventTime": 1414.2568359375,
+      "KillStreak": 2,
+      "KillerName": "Slyndri"
+    },
+    {
+      "Assisters": [
+        "Steverino",
+        "ΨΞΞΞΞΞΞΨ",
+        "IWantItAllNow",
+        "ZERGSTINGGGGGGGG"
+      ],
+      "EventID": 46,
+      "EventName": "ChampionKill",
+      "EventTime": 1415.7420654296875,
+      "KillerName": "ˉˉˉSplash",
+      "VictimName": "Slyndri"
+    },
+    {
+      "Assisters": [
+        "Slyndri",
+        "Roi DEMON",
+        "my future"
+      ],
+      "EventID": 47,
+      "EventName": "ChampionKill",
+      "EventTime": 1429.2618408203125,
+      "KillerName": "RYL Kunduz",
+      "VictimName": "ˉˉˉSplash"
+    },
+    {
+      "Assisters": [
+        "Roi DEMON"
+      ],
+      "EventID": 48,
+      "EventName": "ChampionKill",
+      "EventTime": 1437.795166015625,
+      "KillerName": "my future",
+      "VictimName": "ZERGSTINGGGGGGGG"
+    },
+    {
+      "Assisters": [
+        "Roi DEMON",
+        "RYL Kunduz",
+        "my future"
+      ],
+      "EventID": 49,
+      "EventName": "ChampionKill",
+      "EventTime": 1469.646240234375,
+      "KillerName": "DONGERZX",
+      "VictimName": "ΨΞΞΞΞΞΞΨ"
+    },
+    {
+      "Assisters": [
+        "Roi DEMON",
+        "DONGERZX"
+      ],
+      "EventID": 50,
+      "EventName": "ChampionKill",
+      "EventTime": 1478.784423828125,
+      "KillerName": "my future",
+      "VictimName": "Steverino"
+    },
+    {
+      "Assisters": [],
+      "EventID": 51,
+      "EventName": "ChampionKill",
+      "EventTime": 1504.9921875,
+      "KillerName": "Slyndri",
+      "VictimName": "ˉˉˉSplash"
+    },
+    {
+      "Assisters": [],
+      "EventID": 52,
+      "EventName": "ChampionKill",
+      "EventTime": 1506.428955078125,
+      "KillerName": "RYL Kunduz",
+      "VictimName": "IWantItAllNow"
+    },
+    {
+      "EventID": 53,
+      "EventName": "GameEnd",
+      "EventTime": 1520.5255126953125,
+      "Result": "Win"
+    }
+  ]
+}

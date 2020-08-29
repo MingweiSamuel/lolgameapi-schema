@@ -1,0 +1,2462 @@
+{
+  "types": {
+    "10000": {
+      "type": "object",
+      "properties": {
+        "abilityLevel": {
+          "type": "integer"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "rawDescription": {
+          "type": "string"
+        },
+        "rawDisplayName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "abilityLevel",
+        "displayName",
+        "id",
+        "rawDescription",
+        "rawDisplayName"
+      ]
+    },
+    "10001": {
+      "type": "object",
+      "properties": {
+        "displayName": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "rawDescription": {
+          "type": "string"
+        },
+        "rawDisplayName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "displayName",
+        "id",
+        "rawDescription",
+        "rawDisplayName"
+      ]
+    },
+    "10002": {
+      "type": "object",
+      "properties": {
+        "E": {
+          "$ref": "10000"
+        },
+        "Passive": {
+          "$ref": "10001"
+        },
+        "Q": {
+          "$ref": "10000"
+        },
+        "R": {
+          "$ref": "10000"
+        },
+        "W": {
+          "$ref": "10000"
+        }
+      },
+      "required": [
+        "E",
+        "Passive",
+        "Q",
+        "R",
+        "W"
+      ]
+    },
+    "10003": {
+      "type": "object",
+      "properties": {
+        "abilityPower": {
+          "type": "integer"
+        },
+        "armor": {
+          "type": "integer"
+        },
+        "armorPenetrationFlat": {
+          "type": "integer"
+        },
+        "armorPenetrationPercent": {
+          "type": "integer"
+        },
+        "attackDamage": {
+          "type": "number"
+        },
+        "attackRange": {
+          "type": "integer"
+        },
+        "attackSpeed": {
+          "type": "number"
+        },
+        "bonusArmorPenetrationPercent": {
+          "type": "integer"
+        },
+        "bonusMagicPenetrationPercent": {
+          "type": "integer"
+        },
+        "cooldownReduction": {
+          "type": "number"
+        },
+        "critChance": {
+          "type": "integer"
+        },
+        "critDamage": {
+          "type": "integer"
+        },
+        "currentHealth": {
+          "type": "integer"
+        },
+        "healthRegenRate": {
+          "type": "number"
+        },
+        "lifeSteal": {
+          "type": "integer"
+        },
+        "magicLethality": {
+          "type": "integer"
+        },
+        "magicPenetrationFlat": {
+          "type": "integer"
+        },
+        "magicPenetrationPercent": {
+          "type": "integer"
+        },
+        "magicResist": {
+          "type": "integer"
+        },
+        "maxHealth": {
+          "type": "integer"
+        },
+        "moveSpeed": {
+          "type": "integer"
+        },
+        "physicalLethality": {
+          "type": "integer"
+        },
+        "resourceMax": {
+          "type": "integer"
+        },
+        "resourceRegenRate": {
+          "type": "number"
+        },
+        "resourceType": {
+          "type": "string"
+        },
+        "resourceValue": {
+          "type": "integer"
+        },
+        "spellVamp": {
+          "type": "integer"
+        },
+        "tenacity": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "abilityPower",
+        "armor",
+        "armorPenetrationFlat",
+        "armorPenetrationPercent",
+        "attackDamage",
+        "attackRange",
+        "attackSpeed",
+        "bonusArmorPenetrationPercent",
+        "bonusMagicPenetrationPercent",
+        "cooldownReduction",
+        "critChance",
+        "critDamage",
+        "currentHealth",
+        "healthRegenRate",
+        "lifeSteal",
+        "magicLethality",
+        "magicPenetrationFlat",
+        "magicPenetrationPercent",
+        "magicResist",
+        "maxHealth",
+        "moveSpeed",
+        "physicalLethality",
+        "resourceMax",
+        "resourceRegenRate",
+        "resourceType",
+        "resourceValue",
+        "spellVamp",
+        "tenacity"
+      ]
+    },
+    "10004": {
+      "type": "object",
+      "properties": {
+        "displayName": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "rawDescription": {
+          "type": "string"
+        },
+        "rawDisplayName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "displayName",
+        "id",
+        "rawDescription",
+        "rawDisplayName"
+      ]
+    },
+    "10005": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "rawDescription": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "rawDescription"
+      ]
+    },
+    "10006": {
+      "type": "object",
+      "properties": {
+        "generalRunes": {
+          "type": "array",
+          "items": [
+            {
+              "$ref": "10004"
+            },
+            {
+              "$ref": "10004"
+            },
+            {
+              "$ref": "10004"
+            },
+            {
+              "$ref": "10004"
+            },
+            {
+              "$ref": "10004"
+            },
+            {
+              "$ref": "10004"
+            }
+          ]
+        },
+        "keystone": {
+          "$ref": "10004"
+        },
+        "primaryRuneTree": {
+          "$ref": "10004"
+        },
+        "secondaryRuneTree": {
+          "$ref": "10004"
+        },
+        "statRunes": {
+          "type": "array",
+          "items": [
+            {
+              "$ref": "10005"
+            },
+            {
+              "$ref": "10005"
+            },
+            {
+              "$ref": "10005"
+            }
+          ]
+        }
+      },
+      "required": [
+        "generalRunes",
+        "keystone",
+        "primaryRuneTree",
+        "secondaryRuneTree",
+        "statRunes"
+      ]
+    },
+    "10007": {
+      "type": "object",
+      "properties": {
+        "abilities": {
+          "$ref": "10002"
+        },
+        "championStats": {
+          "$ref": "10003"
+        },
+        "currentGold": {
+          "type": "integer"
+        },
+        "fullRunes": {
+          "$ref": "10006"
+        },
+        "level": {
+          "type": "integer"
+        },
+        "summonerName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "abilities",
+        "championStats",
+        "currentGold",
+        "fullRunes",
+        "level",
+        "summonerName"
+      ]
+    },
+    "10008": {
+      "type": "object",
+      "properties": {
+        "canUse": {
+          "type": "boolean"
+        },
+        "consumable": {
+          "type": "boolean"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "itemID": {
+          "type": "integer"
+        },
+        "price": {
+          "type": "integer"
+        },
+        "rawDescription": {
+          "type": "string"
+        },
+        "rawDisplayName": {
+          "type": "string"
+        },
+        "slot": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "canUse",
+        "consumable",
+        "count",
+        "displayName",
+        "itemID",
+        "price",
+        "rawDescription",
+        "rawDisplayName",
+        "slot"
+      ]
+    },
+    "10009": {
+      "type": "object",
+      "properties": {
+        "keystone": {
+          "$ref": "10004"
+        },
+        "primaryRuneTree": {
+          "$ref": "10004"
+        },
+        "secondaryRuneTree": {
+          "$ref": "10004"
+        }
+      },
+      "required": [
+        "keystone",
+        "primaryRuneTree",
+        "secondaryRuneTree"
+      ]
+    },
+    "10010": {
+      "type": "object",
+      "properties": {
+        "assists": {
+          "type": "integer"
+        },
+        "creepScore": {
+          "type": "integer"
+        },
+        "deaths": {
+          "type": "integer"
+        },
+        "kills": {
+          "type": "integer"
+        },
+        "wardScore": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "assists",
+        "creepScore",
+        "deaths",
+        "kills",
+        "wardScore"
+      ]
+    },
+    "10011": {
+      "type": "object",
+      "properties": {
+        "displayName": {
+          "type": "string"
+        },
+        "rawDescription": {
+          "type": "string"
+        },
+        "rawDisplayName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "displayName",
+        "rawDescription",
+        "rawDisplayName"
+      ]
+    },
+    "10012": {
+      "type": "object",
+      "properties": {
+        "summonerSpellOne": {
+          "$ref": "10011"
+        },
+        "summonerSpellTwo": {
+          "$ref": "10011"
+        }
+      },
+      "required": [
+        "summonerSpellOne",
+        "summonerSpellTwo"
+      ]
+    },
+    "10013": {
+      "type": "object",
+      "properties": {
+        "championName": {
+          "type": "string"
+        },
+        "isBot": {
+          "type": "boolean"
+        },
+        "isDead": {
+          "type": "boolean"
+        },
+        "items": {
+          "type": "array",
+          "items": [
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            }
+          ]
+        },
+        "level": {
+          "type": "integer"
+        },
+        "position": {
+          "type": "string"
+        },
+        "rawChampionName": {
+          "type": "string"
+        },
+        "rawSkinName": {
+          "type": "string"
+        },
+        "respawnTimer": {
+          "type": "integer"
+        },
+        "runes": {
+          "$ref": "10009"
+        },
+        "scores": {
+          "$ref": "10010"
+        },
+        "skinID": {
+          "type": "integer"
+        },
+        "skinName": {
+          "type": "string"
+        },
+        "summonerName": {
+          "type": "string"
+        },
+        "summonerSpells": {
+          "$ref": "10012"
+        },
+        "team": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "championName",
+        "isBot",
+        "isDead",
+        "items",
+        "level",
+        "position",
+        "rawChampionName",
+        "rawSkinName",
+        "respawnTimer",
+        "runes",
+        "scores",
+        "skinID",
+        "skinName",
+        "summonerName",
+        "summonerSpells",
+        "team"
+      ]
+    },
+    "10016": {
+      "type": "object",
+      "properties": {
+        "championName": {
+          "type": "string"
+        },
+        "isBot": {
+          "type": "boolean"
+        },
+        "isDead": {
+          "type": "boolean"
+        },
+        "items": {
+          "type": "array",
+          "items": [
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            }
+          ]
+        },
+        "level": {
+          "type": "integer"
+        },
+        "position": {
+          "type": "string"
+        },
+        "rawChampionName": {
+          "type": "string"
+        },
+        "respawnTimer": {
+          "type": "number"
+        },
+        "runes": {
+          "$ref": "10009"
+        },
+        "scores": {
+          "$ref": "10010"
+        },
+        "skinID": {
+          "type": "integer"
+        },
+        "summonerName": {
+          "type": "string"
+        },
+        "summonerSpells": {
+          "$ref": "10012"
+        },
+        "team": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "championName",
+        "isBot",
+        "isDead",
+        "items",
+        "level",
+        "position",
+        "rawChampionName",
+        "respawnTimer",
+        "runes",
+        "scores",
+        "skinID",
+        "summonerName",
+        "summonerSpells",
+        "team"
+      ]
+    },
+    "10017": {
+      "type": "object",
+      "properties": {
+        "championName": {
+          "type": "string"
+        },
+        "isBot": {
+          "type": "boolean"
+        },
+        "isDead": {
+          "type": "boolean"
+        },
+        "items": {
+          "type": "array",
+          "items": [
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            }
+          ]
+        },
+        "level": {
+          "type": "integer"
+        },
+        "position": {
+          "type": "string"
+        },
+        "rawChampionName": {
+          "type": "string"
+        },
+        "respawnTimer": {
+          "type": "integer"
+        },
+        "runes": {
+          "$ref": "10009"
+        },
+        "scores": {
+          "$ref": "10010"
+        },
+        "skinID": {
+          "type": "integer"
+        },
+        "summonerName": {
+          "type": "string"
+        },
+        "summonerSpells": {
+          "$ref": "10012"
+        },
+        "team": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "championName",
+        "isBot",
+        "isDead",
+        "items",
+        "level",
+        "position",
+        "rawChampionName",
+        "respawnTimer",
+        "runes",
+        "scores",
+        "skinID",
+        "summonerName",
+        "summonerSpells",
+        "team"
+      ]
+    },
+    "10018": {
+      "type": "object",
+      "properties": {
+        "championName": {
+          "type": "string"
+        },
+        "isBot": {
+          "type": "boolean"
+        },
+        "isDead": {
+          "type": "boolean"
+        },
+        "items": {
+          "type": "array",
+          "items": [
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            },
+            {
+              "$ref": "10008"
+            }
+          ]
+        },
+        "level": {
+          "type": "integer"
+        },
+        "position": {
+          "type": "string"
+        },
+        "rawChampionName": {
+          "type": "string"
+        },
+        "rawSkinName": {
+          "type": "string"
+        },
+        "respawnTimer": {
+          "type": "integer"
+        },
+        "runes": {
+          "$ref": "10009"
+        },
+        "scores": {
+          "$ref": "10010"
+        },
+        "skinID": {
+          "type": "integer"
+        },
+        "skinName": {
+          "type": "string"
+        },
+        "summonerName": {
+          "type": "string"
+        },
+        "summonerSpells": {
+          "$ref": "10012"
+        },
+        "team": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "championName",
+        "isBot",
+        "isDead",
+        "items",
+        "level",
+        "position",
+        "rawChampionName",
+        "rawSkinName",
+        "respawnTimer",
+        "runes",
+        "scores",
+        "skinID",
+        "skinName",
+        "summonerName",
+        "summonerSpells",
+        "team"
+      ]
+    },
+    "10020": {
+      "type": "object",
+      "properties": {
+        "EventID": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "EventTime": {
+          "type": "number"
+        },
+        "TurretKilled": {
+          "type": "string"
+        },
+        "KillerName": {
+          "type": "string"
+        },
+        "Assisters": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "EventID",
+        "EventName",
+        "EventTime"
+      ]
+    },
+    "10021": {
+      "type": "object",
+      "properties": {
+        "EventID": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "EventTime": {
+          "type": "number"
+        },
+        "InhibKilled": {
+          "type": "string"
+        },
+        "KillerName": {
+          "type": "string"
+        },
+        "Assisters": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "EventID",
+        "EventName",
+        "EventTime",
+        "InhibKilled",
+        "KillerName",
+        "Assisters"
+      ]
+    },
+    "10022": {
+      "type": "object",
+      "properties": {
+        "EventID": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "EventTime": {
+          "type": "number"
+        },
+        "DragonType": {
+          "type": "string"
+        },
+        "Stolen": {
+          "type": "string"
+        },
+        "KillerName": {
+          "type": "string"
+        },
+        "Assisters": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "EventID",
+        "EventName",
+        "EventTime",
+        "Stolen",
+        "KillerName",
+        "Assisters"
+      ]
+    },
+    "10023": {
+      "type": "object",
+      "properties": {
+        "EventID": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "EventTime": {
+          "type": "number"
+        },
+        "VictimName": {
+          "type": "string"
+        },
+        "KillerName": {
+          "type": "string"
+        },
+        "Assisters": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "EventID",
+        "EventName",
+        "EventTime",
+        "VictimName",
+        "KillerName",
+        "Assisters"
+      ]
+    },
+    "10024": {
+      "type": "object",
+      "properties": {
+        "EventID": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "EventTime": {
+          "type": "number"
+        },
+        "KillerName": {
+          "type": "string"
+        },
+        "KillStreak": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "EventID",
+        "EventName",
+        "EventTime",
+        "KillerName",
+        "KillStreak"
+      ]
+    },
+    "10025": {
+      "type": "object",
+      "properties": {
+        "EventID": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "EventTime": {
+          "type": "number"
+        },
+        "Acer": {
+          "type": "string"
+        },
+        "AcingTeam": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "EventID",
+        "EventName",
+        "EventTime",
+        "Acer",
+        "AcingTeam"
+      ]
+    },
+    "10026": {
+      "type": "object",
+      "properties": {
+        "Assisters": {
+          "type": "array",
+          "items": []
+        },
+        "EventID": {
+          "type": "integer"
+        },
+        "EventName": {
+          "type": "string"
+        },
+        "EventTime": {
+          "type": "number"
+        },
+        "KillerName": {
+          "type": "string"
+        },
+        "VictimName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Assisters",
+        "EventID",
+        "EventName",
+        "EventTime",
+        "KillerName",
+        "VictimName"
+      ]
+    },
+    "10027": {
+      "type": "object",
+      "properties": {
+        "Events": {
+          "type": "array",
+          "items": [
+            {
+              "$ref": "10019"
+            },
+            {
+              "$ref": "10019"
+            },
+            {
+              "$ref": "10019"
+            },
+            {
+              "$ref": "10020"
+            },
+            {
+              "$ref": "10021"
+            },
+            {
+              "$ref": "10022"
+            },
+            {
+              "$ref": "10022"
+            },
+            {
+              "$ref": "10022"
+            },
+            {
+              "$ref": "10022"
+            },
+            {
+              "$ref": "10023"
+            },
+            {
+              "$ref": "10024"
+            },
+            {
+              "$ref": "10024"
+            },
+            {
+              "$ref": "10024"
+            },
+            {
+              "$ref": "10024"
+            },
+            {
+              "$ref": "10025"
+            },
+            {
+              "$ref": "10020"
+            },
+            {
+              "$ref": "10026"
+            }
+          ]
+        }
+      },
+      "required": [
+        "Events"
+      ]
+    },
+    "10028": {
+      "type": "object",
+      "properties": {
+        "gameMode": {
+          "type": "string"
+        },
+        "gameTime": {
+          "type": "number"
+        },
+        "mapName": {
+          "type": "string"
+        },
+        "mapNumber": {
+          "type": "integer"
+        },
+        "mapTerrain": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "gameMode",
+        "gameTime",
+        "mapName",
+        "mapNumber",
+        "mapTerrain"
+      ]
+    },
+    "10029": {
+      "type": "object",
+      "properties": {
+        "activePlayer": {
+          "$ref": "10007"
+        },
+        "allPlayers": {
+          "type": "array",
+          "items": [
+            {
+              "$ref": "10013"
+            },
+            {
+              "$ref": "10014"
+            },
+            {
+              "$ref": "10015"
+            },
+            {
+              "$ref": "10016"
+            },
+            {
+              "$ref": "10015"
+            },
+            {
+              "$ref": "10017"
+            },
+            {
+              "$ref": "10014"
+            },
+            {
+              "$ref": "10018"
+            },
+            {
+              "$ref": "10013"
+            },
+            {
+              "$ref": "10017"
+            }
+          ]
+        },
+        "events": {
+          "$ref": "10027"
+        },
+        "gameData": {
+          "$ref": "10028"
+        }
+      },
+      "required": [
+        "activePlayer",
+        "allPlayers",
+        "events",
+        "gameData"
+      ]
+    }
+  },
+  "typeNames": {
+    "10000": [
+      [
+        "allGameData",
+        "activePlayer",
+        "abilities",
+        "E"
+      ],
+      [
+        "allGameData",
+        "activePlayer",
+        "abilities",
+        "Q"
+      ],
+      [
+        "allGameData",
+        "activePlayer",
+        "abilities",
+        "R"
+      ],
+      [
+        "allGameData",
+        "activePlayer",
+        "abilities",
+        "W"
+      ]
+    ],
+    "10001": [
+      [
+        "allGameData",
+        "activePlayer",
+        "abilities",
+        "Passive"
+      ]
+    ],
+    "10002": [
+      [
+        "allGameData",
+        "activePlayer",
+        "abilities"
+      ]
+    ],
+    "10003": [
+      [
+        "allGameData",
+        "activePlayer",
+        "championStats"
+      ]
+    ],
+    "10004": [
+      [
+        "allGameData",
+        "activePlayer",
+        "fullRunes",
+        "generalRunes",
+        0
+      ],
+      [
+        "allGameData",
+        "activePlayer",
+        "fullRunes",
+        "generalRunes",
+        1
+      ],
+      [
+        "allGameData",
+        "activePlayer",
+        "fullRunes",
+        "generalRunes",
+        2
+      ],
+      [
+        "allGameData",
+        "activePlayer",
+        "fullRunes",
+        "generalRunes",
+        3
+      ],
+      [
+        "allGameData",
+        "activePlayer",
+        "fullRunes",
+        "generalRunes",
+        4
+      ],
+      [
+        "allGameData",
+        "activePlayer",
+        "fullRunes",
+        "generalRunes",
+        5
+      ],
+      [
+        "allGameData",
+        "activePlayer",
+        "fullRunes",
+        "keystone"
+      ],
+      [
+        "allGameData",
+        "activePlayer",
+        "fullRunes",
+        "primaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "activePlayer",
+        "fullRunes",
+        "secondaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        0,
+        "runes",
+        "keystone"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        0,
+        "runes",
+        "primaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        0,
+        "runes",
+        "secondaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        1,
+        "runes",
+        "keystone"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        1,
+        "runes",
+        "primaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        1,
+        "runes",
+        "secondaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        2,
+        "runes",
+        "keystone"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        2,
+        "runes",
+        "primaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        2,
+        "runes",
+        "secondaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        3,
+        "runes",
+        "keystone"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        3,
+        "runes",
+        "primaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        3,
+        "runes",
+        "secondaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        4,
+        "runes",
+        "keystone"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        4,
+        "runes",
+        "primaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        4,
+        "runes",
+        "secondaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        5,
+        "runes",
+        "keystone"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        5,
+        "runes",
+        "primaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        5,
+        "runes",
+        "secondaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        6,
+        "runes",
+        "keystone"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        6,
+        "runes",
+        "primaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        6,
+        "runes",
+        "secondaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        7,
+        "runes",
+        "keystone"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        7,
+        "runes",
+        "primaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        7,
+        "runes",
+        "secondaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        8,
+        "runes",
+        "keystone"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        8,
+        "runes",
+        "primaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        8,
+        "runes",
+        "secondaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        9,
+        "runes",
+        "keystone"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        9,
+        "runes",
+        "primaryRuneTree"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        9,
+        "runes",
+        "secondaryRuneTree"
+      ]
+    ],
+    "10005": [
+      [
+        "allGameData",
+        "activePlayer",
+        "fullRunes",
+        "statRunes",
+        0
+      ],
+      [
+        "allGameData",
+        "activePlayer",
+        "fullRunes",
+        "statRunes",
+        1
+      ],
+      [
+        "allGameData",
+        "activePlayer",
+        "fullRunes",
+        "statRunes",
+        2
+      ]
+    ],
+    "10006": [
+      [
+        "allGameData",
+        "activePlayer",
+        "fullRunes"
+      ]
+    ],
+    "10007": [
+      [
+        "allGameData",
+        "activePlayer"
+      ]
+    ],
+    "10008": [
+      [
+        "allGameData",
+        "allPlayers",
+        0,
+        "items",
+        0
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        0,
+        "items",
+        1
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        0,
+        "items",
+        2
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        0,
+        "items",
+        3
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        0,
+        "items",
+        4
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        0,
+        "items",
+        5
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        0,
+        "items",
+        6
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        1,
+        "items",
+        0
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        1,
+        "items",
+        1
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        1,
+        "items",
+        2
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        1,
+        "items",
+        3
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        1,
+        "items",
+        4
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        2,
+        "items",
+        0
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        2,
+        "items",
+        1
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        2,
+        "items",
+        2
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        2,
+        "items",
+        3
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        2,
+        "items",
+        4
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        2,
+        "items",
+        5
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        3,
+        "items",
+        0
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        3,
+        "items",
+        1
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        3,
+        "items",
+        2
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        3,
+        "items",
+        3
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        3,
+        "items",
+        4
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        4,
+        "items",
+        0
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        4,
+        "items",
+        1
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        4,
+        "items",
+        2
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        4,
+        "items",
+        3
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        4,
+        "items",
+        4
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        4,
+        "items",
+        5
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        5,
+        "items",
+        0
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        5,
+        "items",
+        1
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        5,
+        "items",
+        2
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        5,
+        "items",
+        3
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        5,
+        "items",
+        4
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        5,
+        "items",
+        5
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        6,
+        "items",
+        0
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        6,
+        "items",
+        1
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        6,
+        "items",
+        2
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        6,
+        "items",
+        3
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        6,
+        "items",
+        4
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        7,
+        "items",
+        0
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        7,
+        "items",
+        1
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        7,
+        "items",
+        2
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        7,
+        "items",
+        3
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        7,
+        "items",
+        4
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        8,
+        "items",
+        0
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        8,
+        "items",
+        1
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        8,
+        "items",
+        2
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        8,
+        "items",
+        3
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        8,
+        "items",
+        4
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        8,
+        "items",
+        5
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        8,
+        "items",
+        6
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        9,
+        "items",
+        0
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        9,
+        "items",
+        1
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        9,
+        "items",
+        2
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        9,
+        "items",
+        3
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        9,
+        "items",
+        4
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        9,
+        "items",
+        5
+      ]
+    ],
+    "10009": [
+      [
+        "allGameData",
+        "allPlayers",
+        0,
+        "runes"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        1,
+        "runes"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        2,
+        "runes"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        3,
+        "runes"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        4,
+        "runes"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        5,
+        "runes"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        6,
+        "runes"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        7,
+        "runes"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        8,
+        "runes"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        9,
+        "runes"
+      ]
+    ],
+    "10010": [
+      [
+        "allGameData",
+        "allPlayers",
+        0,
+        "scores"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        1,
+        "scores"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        2,
+        "scores"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        3,
+        "scores"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        4,
+        "scores"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        5,
+        "scores"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        6,
+        "scores"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        7,
+        "scores"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        8,
+        "scores"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        9,
+        "scores"
+      ]
+    ],
+    "10011": [
+      [
+        "allGameData",
+        "allPlayers",
+        0,
+        "summonerSpells",
+        "summonerSpellOne"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        0,
+        "summonerSpells",
+        "summonerSpellTwo"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        1,
+        "summonerSpells",
+        "summonerSpellOne"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        1,
+        "summonerSpells",
+        "summonerSpellTwo"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        2,
+        "summonerSpells",
+        "summonerSpellOne"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        2,
+        "summonerSpells",
+        "summonerSpellTwo"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        3,
+        "summonerSpells",
+        "summonerSpellOne"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        3,
+        "summonerSpells",
+        "summonerSpellTwo"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        4,
+        "summonerSpells",
+        "summonerSpellOne"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        4,
+        "summonerSpells",
+        "summonerSpellTwo"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        5,
+        "summonerSpells",
+        "summonerSpellOne"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        5,
+        "summonerSpells",
+        "summonerSpellTwo"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        6,
+        "summonerSpells",
+        "summonerSpellOne"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        6,
+        "summonerSpells",
+        "summonerSpellTwo"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        7,
+        "summonerSpells",
+        "summonerSpellOne"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        7,
+        "summonerSpells",
+        "summonerSpellTwo"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        8,
+        "summonerSpells",
+        "summonerSpellOne"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        8,
+        "summonerSpells",
+        "summonerSpellTwo"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        9,
+        "summonerSpells",
+        "summonerSpellOne"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        9,
+        "summonerSpells",
+        "summonerSpellTwo"
+      ]
+    ],
+    "10012": [
+      [
+        "allGameData",
+        "allPlayers",
+        0,
+        "summonerSpells"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        1,
+        "summonerSpells"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        2,
+        "summonerSpells"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        3,
+        "summonerSpells"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        4,
+        "summonerSpells"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        5,
+        "summonerSpells"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        6,
+        "summonerSpells"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        7,
+        "summonerSpells"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        8,
+        "summonerSpells"
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        9,
+        "summonerSpells"
+      ]
+    ],
+    "10013": [
+      [
+        "allGameData",
+        "allPlayers",
+        0
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        8
+      ]
+    ],
+    "10014": [
+      [
+        "allGameData",
+        "allPlayers",
+        1
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        6
+      ]
+    ],
+    "10015": [
+      [
+        "allGameData",
+        "allPlayers",
+        2
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        4
+      ]
+    ],
+    "10016": [
+      [
+        "allGameData",
+        "allPlayers",
+        3
+      ]
+    ],
+    "10017": [
+      [
+        "allGameData",
+        "allPlayers",
+        5
+      ],
+      [
+        "allGameData",
+        "allPlayers",
+        9
+      ]
+    ],
+    "10018": [
+      [
+        "allGameData",
+        "allPlayers",
+        7
+      ]
+    ],
+    "10019": [
+      [
+        "allGameData",
+        "events",
+        "Events",
+        0
+      ],
+      [
+        "allGameData",
+        "events",
+        "Events",
+        1
+      ],
+      [
+        "allGameData",
+        "events",
+        "Events",
+        2
+      ]
+    ],
+    "10020": [
+      [
+        "allGameData",
+        "events",
+        "Events",
+        3
+      ],
+      [
+        "allGameData",
+        "events",
+        "Events",
+        15
+      ]
+    ],
+    "10021": [
+      [
+        "allGameData",
+        "events",
+        "Events",
+        4
+      ]
+    ],
+    "10022": [
+      [
+        "allGameData",
+        "events",
+        "Events",
+        5
+      ],
+      [
+        "allGameData",
+        "events",
+        "Events",
+        6
+      ],
+      [
+        "allGameData",
+        "events",
+        "Events",
+        7
+      ],
+      [
+        "allGameData",
+        "events",
+        "Events",
+        8
+      ]
+    ],
+    "10023": [
+      [
+        "allGameData",
+        "events",
+        "Events",
+        9
+      ]
+    ],
+    "10024": [
+      [
+        "allGameData",
+        "events",
+        "Events",
+        10
+      ],
+      [
+        "allGameData",
+        "events",
+        "Events",
+        11
+      ],
+      [
+        "allGameData",
+        "events",
+        "Events",
+        12
+      ],
+      [
+        "allGameData",
+        "events",
+        "Events",
+        13
+      ]
+    ],
+    "10025": [
+      [
+        "allGameData",
+        "events",
+        "Events",
+        14
+      ]
+    ],
+    "10026": [
+      [
+        "allGameData",
+        "events",
+        "Events",
+        16
+      ]
+    ],
+    "10027": [
+      [
+        "allGameData",
+        "events"
+      ]
+    ],
+    "10028": [
+      [
+        "allGameData",
+        "gameData"
+      ]
+    ],
+    "10029": [
+      [
+        "allGameData"
+      ]
+    ]
+  }
+}

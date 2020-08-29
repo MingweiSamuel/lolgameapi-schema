@@ -1,5 +1,5 @@
 {
-  "10000AllGameDataActivePlayerAbilitiesE": {
+  "PlayerAbility": {
     "type": "object",
     "properties": {
       "abilityLevel": {
@@ -26,7 +26,7 @@
       "rawDisplayName"
     ]
   },
-  "10001AllGameDataActivePlayerAbilitiesPassive": {
+  "PlayerPassiveAbility": {
     "type": "object",
     "properties": {
       "displayName": {
@@ -49,23 +49,23 @@
       "rawDisplayName"
     ]
   },
-  "10002AllGameDataActivePlayerAbilities": {
+  "PlayerAbilities": {
     "type": "object",
     "properties": {
       "E": {
-        "$ref": "#/components/schemas/10000"
+        "$ref": "#/components/schemas/PlayerAbility"
       },
       "Passive": {
-        "$ref": "#/components/schemas/10001"
+        "$ref": "#/components/schemas/PlayerPassiveAbility"
       },
       "Q": {
-        "$ref": "#/components/schemas/10000"
+        "$ref": "#/components/schemas/PlayerAbility"
       },
       "R": {
-        "$ref": "#/components/schemas/10000"
+        "$ref": "#/components/schemas/PlayerAbility"
       },
       "W": {
-        "$ref": "#/components/schemas/10000"
+        "$ref": "#/components/schemas/PlayerAbility"
       }
     },
     "required": [
@@ -76,7 +76,7 @@
       "W"
     ]
   },
-  "10003AllGameDataActivePlayerChampionStats": {
+  "PlayerChampionStats": {
     "type": "object",
     "properties": {
       "abilityPower": {
@@ -195,7 +195,7 @@
       "tenacity"
     ]
   },
-  "10004AllGameDataActivePlayerFullRunesGeneralRunes0": {
+  "PlayerRune": {
     "type": "object",
     "properties": {
       "displayName": {
@@ -218,7 +218,7 @@
       "rawDisplayName"
     ]
   },
-  "10005AllGameDataActivePlayerFullRunesStatRunes0": {
+  "PlayerStatRune": {
     "type": "object",
     "properties": {
       "id": {
@@ -233,28 +233,28 @@
       "rawDescription"
     ]
   },
-  "10006AllGameDataActivePlayerFullRunes": {
+  "ActivePlayerRunes": {
     "type": "object",
     "properties": {
       "generalRunes": {
         "type": "array",
         "items": {
-          "$ref": "#/components/schemas/10004"
+          "$ref": "#/components/schemas/PlayerRune"
         }
       },
       "keystone": {
-        "$ref": "#/components/schemas/10004"
+        "$ref": "#/components/schemas/PlayerRune"
       },
       "primaryRuneTree": {
-        "$ref": "#/components/schemas/10004"
+        "$ref": "#/components/schemas/PlayerRune"
       },
       "secondaryRuneTree": {
-        "$ref": "#/components/schemas/10004"
+        "$ref": "#/components/schemas/PlayerRune"
       },
       "statRunes": {
         "type": "array",
         "items": {
-          "$ref": "#/components/schemas/10005"
+          "$ref": "#/components/schemas/PlayerStatRune"
         }
       }
     },
@@ -266,20 +266,20 @@
       "statRunes"
     ]
   },
-  "10007AllGameDataActivePlayer": {
+  "ActivePlayer": {
     "type": "object",
     "properties": {
       "abilities": {
-        "$ref": "#/components/schemas/10002"
+        "$ref": "#/components/schemas/PlayerAbilities"
       },
       "championStats": {
-        "$ref": "#/components/schemas/10003"
+        "$ref": "#/components/schemas/PlayerChampionStats"
       },
       "currentGold": {
         "type": "integer"
       },
       "fullRunes": {
-        "$ref": "#/components/schemas/10006"
+        "$ref": "#/components/schemas/ActivePlayerRunes"
       },
       "level": {
         "type": "integer"
@@ -297,7 +297,7 @@
       "summonerName"
     ]
   },
-  "10008AllGameDataAllPlayers0Items0": {
+  "PlayerItem": {
     "type": "object",
     "properties": {
       "canUse": {
@@ -340,17 +340,17 @@
       "slot"
     ]
   },
-  "10009AllGameDataAllPlayers0Runes": {
+  "PlayerRunes": {
     "type": "object",
     "properties": {
       "keystone": {
-        "$ref": "#/components/schemas/10004"
+        "$ref": "#/components/schemas/PlayerRune"
       },
       "primaryRuneTree": {
-        "$ref": "#/components/schemas/10004"
+        "$ref": "#/components/schemas/PlayerRune"
       },
       "secondaryRuneTree": {
-        "$ref": "#/components/schemas/10004"
+        "$ref": "#/components/schemas/PlayerRune"
       }
     },
     "required": [
@@ -359,7 +359,7 @@
       "secondaryRuneTree"
     ]
   },
-  "10010AllGameDataAllPlayers0Scores": {
+  "PlayerScores": {
     "type": "object",
     "properties": {
       "assists": {
@@ -386,7 +386,7 @@
       "wardScore"
     ]
   },
-  "10011AllGameDataAllPlayers0SummonerSpellsSummonerSpellOne": {
+  "PlayerSummonerSpell": {
     "type": "object",
     "properties": {
       "displayName": {
@@ -405,14 +405,14 @@
       "rawDisplayName"
     ]
   },
-  "10012AllGameDataAllPlayers0SummonerSpells": {
+  "PlayerSummonerSpells": {
     "type": "object",
     "properties": {
       "summonerSpellOne": {
-        "$ref": "#/components/schemas/10011"
+        "$ref": "#/components/schemas/PlayerSummonerSpell"
       },
       "summonerSpellTwo": {
-        "$ref": "#/components/schemas/10011"
+        "$ref": "#/components/schemas/PlayerSummonerSpell"
       }
     },
     "required": [
@@ -420,7 +420,7 @@
       "summonerSpellTwo"
     ]
   },
-  "10013AllGameDataAllPlayers0": {
+  "Player": {
     "type": "object",
     "properties": {
       "championName": {
@@ -435,7 +435,7 @@
       "items": {
         "type": "array",
         "items": {
-          "$ref": "#/components/schemas/10008"
+          "$ref": "#/components/schemas/PlayerItem"
         }
       },
       "level": {
@@ -454,10 +454,10 @@
         "type": "number"
       },
       "runes": {
-        "$ref": "#/components/schemas/10009"
+        "$ref": "#/components/schemas/PlayerRunes"
       },
       "scores": {
-        "$ref": "#/components/schemas/10010"
+        "$ref": "#/components/schemas/PlayerScores"
       },
       "skinID": {
         "type": "integer"
@@ -469,7 +469,7 @@
         "type": "string"
       },
       "summonerSpells": {
-        "$ref": "#/components/schemas/10012"
+        "$ref": "#/components/schemas/PlayerSummonerSpells"
       },
       "team": {
         "type": "string"
@@ -492,7 +492,7 @@
       "team"
     ]
   },
-  "10014AllGameDataEventsEvents0": {
+  "Event": {
     "type": "object",
     "properties": {
       "EventID": {
@@ -536,6 +536,9 @@
       },
       "AcingTeam": {
         "type": "string"
+      },
+      "Result": {
+        "type": "string"
       }
     },
     "required": [
@@ -544,13 +547,13 @@
       "EventTime"
     ]
   },
-  "10015AllGameDataEvents": {
+  "EventData": {
     "type": "object",
     "properties": {
       "Events": {
         "type": "array",
         "items": {
-          "$ref": "#/components/schemas/10014"
+          "$ref": "#/components/schemas/Event"
         }
       }
     },
@@ -558,7 +561,7 @@
       "Events"
     ]
   },
-  "10016AllGameDataGameData": {
+  "GameStats": {
     "type": "object",
     "properties": {
       "gameMode": {
@@ -585,23 +588,23 @@
       "mapTerrain"
     ]
   },
-  "10017AllGameData": {
+  "AllGameData": {
     "type": "object",
     "properties": {
       "activePlayer": {
-        "$ref": "#/components/schemas/10007"
+        "$ref": "#/components/schemas/ActivePlayer"
       },
       "allPlayers": {
         "type": "array",
         "items": {
-          "$ref": "#/components/schemas/10013"
+          "$ref": "#/components/schemas/Player"
         }
       },
       "events": {
-        "$ref": "#/components/schemas/10015"
+        "$ref": "#/components/schemas/EventData"
       },
       "gameData": {
-        "$ref": "#/components/schemas/10016"
+        "$ref": "#/components/schemas/GameStats"
       }
     },
     "required": [

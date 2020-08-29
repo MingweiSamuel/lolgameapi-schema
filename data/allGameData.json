@@ -1459,6 +1459,12 @@
         "EventTime": 791.5758666992188,
         "KillerName": "Slyndri",
         "VictimName": "ˉˉˉSplash"
+      },
+      {
+        "EventID": 53,
+        "EventName": "GameEnd",
+        "EventTime": 1520.5255126953125,
+        "Result": "Win"
       }
     ]
   },

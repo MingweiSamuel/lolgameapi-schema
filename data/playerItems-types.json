@@ -1,5 +1,5 @@
 {
-  "10000PlayerItems0": {
+  "PlayerItem": {
     "type": "object",
     "properties": {
       "canUse": {

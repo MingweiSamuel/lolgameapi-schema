@@ -1,5 +1,5 @@
 {
-  "10000GameStats": {
+  "GameStats": {
     "type": "object",
     "properties": {
       "gameMode": {

@@ -1,5 +1,5 @@
 {
-  "10000EventDataEvents0": {
+  "Event": {
     "type": "object",
     "properties": {
       "EventID": {
@@ -54,13 +54,13 @@
       "EventTime"
     ]
   },
-  "10001EventData": {
+  "EventData": {
     "type": "object",
     "properties": {
       "Events": {
         "type": "array",
         "items": {
-          "$ref": "10000"
+          "$ref": "#/components/schemas/Event"
         }
       }
     },

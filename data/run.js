@@ -36,8 +36,8 @@ function isSubType(b, p) {
         return false;
 
     if ('array' === b.type) {
-        // Jail-free card if subtype array is empty.
-        if (0 === b.items.length)
+        // Jail-free card if sub array is empty.
+        if (0 === b.items.length) // || 0 === p.items.length)
             return true;
         if (b.items.length !== p.items.length)
             return false;
@@ -79,11 +79,13 @@ function combineTypes(a, b) {
     {
         const sharedProps = intersect(Object.keys(a.properties), Object.keys(b.properties));
         for (const sharedProp of sharedProps) {
-            if (isSubType(a.properties[sharedProp], b.properties[sharedProp])) {
-                out.properties[sharedProp] = b.properties[sharedProp];
+            aProp = a.properties[sharedProp];
+            bProp = b.properties[sharedProp];
+            if (isSubType(aProp, bProp)) {
+                out.properties[sharedProp] = bProp;
             }
-            else if (isSubType(b.properties[sharedProp], a.properties[sharedProp])) {
-                out.properties[sharedProp] = a.properties[sharedProp];
+            else if (isSubType(bProp, aProp)) {
+                out.properties[sharedProp] = aProp;
             }
             else
                 throw Error(`Conflicting shared property when trying to combine objects: ${sharedProp}.`);
@@ -184,6 +186,15 @@ function jsonSchemaToTypes(input, name) {
                 input.properties[key] = helper(val, names.concat([ key ]));
             }
 
+            // // If this type already exists in dtos.json.
+            // for (const [ id, typeSpec ] of Object.entries(dtos)) {
+            //     if (isSubType(input, typeSpec) && isSubType(typeSpec, input)) {
+            //         return {
+            //             $ref: `#/components/schemas/${id}`,
+            //         };
+            //     }
+            // }
+
             // If this type already exists.
             for (const [ id, typeSpec ] of Object.entries(types)) {
                 {
@@ -238,30 +249,31 @@ function jsonSchemaToTypes(input, name) {
     }
     helper(input, [ name ]);
 
-    const typeRenames = {};
-    for (const [ id, namesArrays ] of Object.entries(typeNames)) {
+    // const typeRenames = {};
+    // for (const [ id, namesArrays ] of Object.entries(typeNames)) {
 
-    }
-    for (const name of Object.keys(types)) {
-        console.log(name, camelCase(name));
-    }
+    // }
+    // for (const name of Object.keys(types)) {
+    //     console.log(name, camelCase(name));
+    // }
 
-    const out = {};
-    Object.keys(types).forEach(id => {
-        const names = typeNames[id]
-            .map(name => name
-                .map(x => x.toString())
-                .map(camelCase)
-                .join(''));
-        const name = names[0];
-        // out[name] = {
-        //     id,
-        //     names,
-        //     type: types[id]
-        // };
-        out[id + name] = types[id];
-    });
-    return out;
+    return types;
+    // const out = {};
+    // Object.keys(types).forEach(id => {
+    //     const names = typeNames[id]
+    //         .map(name => name
+    //             .map(x => x.toString())
+    //             .map(camelCase)
+    //             .join(''));
+    //     const name = names[0];
+    //     // out[name] = {
+    //     //     id,
+    //     //     names,
+    //     //     type: types[id]
+    //     // };
+    //     out[id + name] = types[id];
+    // });
+    // return out;
     // return Object.keys(types).map(id => {
     //     return {
     //         names: typeNames[id],
@@ -271,20 +283,79 @@ function jsonSchemaToTypes(input, name) {
     // return { types, typeNames };
 }
 
-const util = require('util');
-const fs = require('fs');
-const writeFileAsync = util.promisify(fs.writeFile);
+function findExistingDtos(types, existingDtos) {
+    function rename(oldName, newName) {
+        const oldKey = `#/components/schemas/${oldName}`;
+        const newKey = `#/components/schemas/${newName}`;
+        function renameHelper(input) {
+            if (!input)
+                throw Error(`Invalid input: ${input}.`);
 
-const inputName = 'allGameData';
-const json = require(`./${inputName}`);
-const jsonSchema = jsonToJsonSchema(json);
-{
-    const jsonSchemaStr = JSON.stringify(jsonSchema, null, 2);
-    writeFileAsync(`./${inputName}-spec.json`, jsonSchemaStr);
+            if (input.$ref) {
+                if (oldKey === input.$ref)
+                    input.$ref = newKey;
+            }
+            else if ('array' === input.type) {
+                if (Array.isArray(input.items))
+                    input.items.forEach(renameHelper);
+                else
+                    renameHelper(input.items);
+            }
+            else if ('object' === input.type) {
+                Object.values(input.properties).forEach(renameHelper);
+            }
+        }
+        // Rename the type.
+        const theType = types[oldName];
+        delete types[oldName];
+        types[newName] = theType;
+        // Rename references.
+        Object.values(types).forEach(renameHelper);
+    }
+
+    let changed;
+    do {
+        changed = false;
+        for (const [ oldName, adHocType ] of Object.entries(types)) {
+            for (const [ newName, existingType ] of Object.entries(existingDtos)) {
+                if (newName === oldName)
+                    continue;
+                // TODO: only check the subtype in the first direction. BUT we need to pick the
+                // best match if there are multiple matches.
+                if (isSubType(adHocType, existingType) && isSubType(existingType, adHocType)) {
+                    rename(oldName, newName);
+                    changed = true;
+                }
+            }
+        }
+    } while (changed);
 }
 
-const jsonTypes = jsonSchemaToTypes(jsonSchema, inputName);
-{
-    const jsonTypesStr = JSON.stringify(jsonTypes, null, 2);
-    writeFileAsync(`./${inputName}-types.json`, jsonTypesStr);
+function main(inputName) {
+    if (!inputName) {
+        console.error('Must supply inputName.');
+        process.exit(1);
+    }
+    const util = require('util');
+    const fs = require('fs');
+    const writeFileAsync = util.promisify(fs.writeFile);
+
+    const dtos = require('./dtos');
+
+    const json = require(`./${inputName}`);
+    const jsonSchema = jsonToJsonSchema(json);
+    {
+        const jsonSchemaStr = JSON.stringify(jsonSchema, null, 2);
+        writeFileAsync(`./${inputName}-spec.json`, jsonSchemaStr);
+    }
+
+    const jsonTypes = jsonSchemaToTypes(jsonSchema, inputName);
+    findExistingDtos(jsonTypes, dtos);
+    Object.keys(jsonTypes).forEach(name => console.log(name));
+    {
+        const jsonTypesStr = JSON.stringify(jsonTypes, null, 2);
+        writeFileAsync(`./${inputName}-types.json`, jsonTypesStr);
+    }
 }
+
+main(process.argv[2]);

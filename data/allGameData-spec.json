@@ -5700,6 +5700,29 @@
                 "KillerName",
                 "VictimName"
               ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "EventID": {
+                  "type": "integer"
+                },
+                "EventName": {
+                  "type": "string"
+                },
+                "EventTime": {
+                  "type": "number"
+                },
+                "Result": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "EventID",
+                "EventName",
+                "EventTime",
+                "Result"
+              ]
             }
           ]
         }

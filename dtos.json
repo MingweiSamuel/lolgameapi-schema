@@ -580,16 +580,13 @@
       },
       "summonerName": {
         "type": "string"
+      },
+      "error": {
+        "type": "string",
+        "description": "If this field is set, it indicates the game client is spectating a game rather than playing a game, so there is no active player. If this field is NOT set, all other fields will be supplied."
       }
     },
-    "required": [
-      "abilities",
-      "championStats",
-      "currentGold",
-      "fullRunes",
-      "level",
-      "summonerName"
-    ]
+    "required": []
   },
   "LiveClientData.AllGameData": {
     "type": "object",

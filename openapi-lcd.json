@@ -1,7 +1,7 @@
 {
   "components": {
     "schemas": {
-      "PlayerItem": {
+      "LiveClientData.PlayerItem": {
         "type": "object",
         "properties": {
           "canUse": {
@@ -44,7 +44,7 @@
           "slot"
         ]
       },
-      "PlayerRune": {
+      "LiveClientData.PlayerRune": {
         "type": "object",
         "properties": {
           "displayName": {
@@ -67,17 +67,17 @@
           "rawDisplayName"
         ]
       },
-      "PlayerRunes": {
+      "LiveClientData.PlayerRunes": {
         "type": "object",
         "properties": {
           "keystone": {
-            "$ref": "#/components/schemas/PlayerRune"
+            "$ref": "#/components/schemas/LiveClientData.PlayerRune"
           },
           "primaryRuneTree": {
-            "$ref": "#/components/schemas/PlayerRune"
+            "$ref": "#/components/schemas/LiveClientData.PlayerRune"
           },
           "secondaryRuneTree": {
-            "$ref": "#/components/schemas/PlayerRune"
+            "$ref": "#/components/schemas/LiveClientData.PlayerRune"
           }
         },
         "required": [
@@ -86,7 +86,7 @@
           "secondaryRuneTree"
         ]
       },
-      "PlayerScores": {
+      "LiveClientData.PlayerScores": {
         "type": "object",
         "properties": {
           "assists": {
@@ -113,7 +113,7 @@
           "wardScore"
         ]
       },
-      "PlayerSummonerSpell": {
+      "LiveClientData.PlayerSummonerSpell": {
         "type": "object",
         "properties": {
           "displayName": {
@@ -132,14 +132,14 @@
           "rawDisplayName"
         ]
       },
-      "PlayerSummonerSpells": {
+      "LiveClientData.PlayerSummonerSpells": {
         "type": "object",
         "properties": {
           "summonerSpellOne": {
-            "$ref": "#/components/schemas/PlayerSummonerSpell"
+            "$ref": "#/components/schemas/LiveClientData.PlayerSummonerSpell"
           },
           "summonerSpellTwo": {
-            "$ref": "#/components/schemas/PlayerSummonerSpell"
+            "$ref": "#/components/schemas/LiveClientData.PlayerSummonerSpell"
           }
         },
         "required": [
@@ -147,7 +147,7 @@
           "summonerSpellTwo"
         ]
       },
-      "Player": {
+      "LiveClientData.Player": {
         "type": "object",
         "properties": {
           "championName": {
@@ -162,7 +162,7 @@
           "items": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/PlayerItem"
+              "$ref": "#/components/schemas/LiveClientData.PlayerItem"
             }
           },
           "level": {
@@ -181,10 +181,10 @@
             "type": "number"
           },
           "runes": {
-            "$ref": "#/components/schemas/PlayerRunes"
+            "$ref": "#/components/schemas/LiveClientData.PlayerRunes"
           },
           "scores": {
-            "$ref": "#/components/schemas/PlayerScores"
+            "$ref": "#/components/schemas/LiveClientData.PlayerScores"
           },
           "skinID": {
             "type": "integer"
@@ -196,7 +196,7 @@
             "type": "string"
           },
           "summonerSpells": {
-            "$ref": "#/components/schemas/PlayerSummonerSpells"
+            "$ref": "#/components/schemas/LiveClientData.PlayerSummonerSpells"
           },
           "team": {
             "type": "string"
@@ -219,16 +219,16 @@
           "team"
         ]
       },
-      "Event": {
+      "LiveClientData.Event": {
         "type": "object",
         "properties": {
-          "EventID": {
+          "LiveClientData.EventID": {
             "type": "integer"
           },
-          "EventName": {
+          "LiveClientData.EventName": {
             "type": "string"
           },
-          "EventTime": {
+          "LiveClientData.EventTime": {
             "type": "number"
           },
           "KillerName": {
@@ -269,26 +269,26 @@
           }
         },
         "required": [
-          "EventID",
-          "EventName",
-          "EventTime"
+          "LiveClientData.EventID",
+          "LiveClientData.EventName",
+          "LiveClientData.EventTime"
         ]
       },
-      "EventData": {
+      "LiveClientData.EventData": {
         "type": "object",
         "properties": {
-          "Events": {
+          "LiveClientData.Events": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Event"
+              "$ref": "#/components/schemas/LiveClientData.Event"
             }
           }
         },
         "required": [
-          "Events"
+          "LiveClientData.Events"
         ]
       },
-      "GameStats": {
+      "LiveClientData.GameStats": {
         "type": "object",
         "properties": {
           "gameMode": {
@@ -315,7 +315,7 @@
           "mapTerrain"
         ]
       },
-      "ActivePlayerAbility": {
+      "LiveClientData.ActivePlayerAbility": {
         "type": "object",
         "properties": {
           "abilityLevel": {
@@ -342,7 +342,7 @@
           "rawDisplayName"
         ]
       },
-      "ActivePlayerPassiveAbility": {
+      "LiveClientData.ActivePlayerPassiveAbility": {
         "type": "object",
         "properties": {
           "displayName": {
@@ -365,23 +365,23 @@
           "rawDisplayName"
         ]
       },
-      "ActivePlayerAbilities": {
+      "LiveClientData.ActivePlayerAbilities": {
         "type": "object",
         "properties": {
           "Passive": {
-            "$ref": "#/components/schemas/ActivePlayerPassiveAbility"
+            "$ref": "#/components/schemas/LiveClientData.ActivePlayerPassiveAbility"
           },
           "Q": {
-            "$ref": "#/components/schemas/ActivePlayerAbility"
+            "$ref": "#/components/schemas/LiveClientData.ActivePlayerAbility"
           },
           "W": {
-            "$ref": "#/components/schemas/ActivePlayerAbility"
+            "$ref": "#/components/schemas/LiveClientData.ActivePlayerAbility"
           },
           "E": {
-            "$ref": "#/components/schemas/ActivePlayerAbility"
+            "$ref": "#/components/schemas/LiveClientData.ActivePlayerAbility"
           },
           "R": {
-            "$ref": "#/components/schemas/ActivePlayerAbility"
+            "$ref": "#/components/schemas/LiveClientData.ActivePlayerAbility"
           }
         },
         "required": [
@@ -392,7 +392,7 @@
           "W"
         ]
       },
-      "ActivePlayerChampionStats": {
+      "LiveClientData.ActivePlayerChampionStats": {
         "type": "object",
         "properties": {
           "abilityPower": {
@@ -511,7 +511,7 @@
           "tenacity"
         ]
       },
-      "ActivePlayerStatRune": {
+      "LiveClientData.ActivePlayerStatRune": {
         "type": "object",
         "properties": {
           "id": {
@@ -526,28 +526,28 @@
           "rawDescription"
         ]
       },
-      "ActivePlayerRunes": {
+      "LiveClientData.ActivePlayerRunes": {
         "type": "object",
         "properties": {
           "generalRunes": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/PlayerRune"
+              "$ref": "#/components/schemas/LiveClientData.PlayerRune"
             }
           },
           "keystone": {
-            "$ref": "#/components/schemas/PlayerRune"
+            "$ref": "#/components/schemas/LiveClientData.PlayerRune"
           },
           "primaryRuneTree": {
-            "$ref": "#/components/schemas/PlayerRune"
+            "$ref": "#/components/schemas/LiveClientData.PlayerRune"
           },
           "secondaryRuneTree": {
-            "$ref": "#/components/schemas/PlayerRune"
+            "$ref": "#/components/schemas/LiveClientData.PlayerRune"
           },
           "statRunes": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/ActivePlayerStatRune"
+              "$ref": "#/components/schemas/LiveClientData.ActivePlayerStatRune"
             }
           }
         },
@@ -559,20 +559,20 @@
           "statRunes"
         ]
       },
-      "ActivePlayer": {
+      "LiveClientData.ActivePlayer": {
         "type": "object",
         "properties": {
           "abilities": {
-            "$ref": "#/components/schemas/ActivePlayerAbilities"
+            "$ref": "#/components/schemas/LiveClientData.ActivePlayerAbilities"
           },
           "championStats": {
-            "$ref": "#/components/schemas/ActivePlayerChampionStats"
+            "$ref": "#/components/schemas/LiveClientData.ActivePlayerChampionStats"
           },
           "currentGold": {
             "type": "integer"
           },
           "fullRunes": {
-            "$ref": "#/components/schemas/ActivePlayerRunes"
+            "$ref": "#/components/schemas/LiveClientData.ActivePlayerRunes"
           },
           "level": {
             "type": "integer"
@@ -590,23 +590,23 @@
           "summonerName"
         ]
       },
-      "AllGameData": {
+      "LiveClientData.AllGameData": {
         "type": "object",
         "properties": {
           "activePlayer": {
-            "$ref": "#/components/schemas/ActivePlayer"
+            "$ref": "#/components/schemas/LiveClientData.ActivePlayer"
           },
           "allPlayers": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Player"
+              "$ref": "#/components/schemas/LiveClientData.Player"
             }
           },
           "events": {
-            "$ref": "#/components/schemas/EventData"
+            "$ref": "#/components/schemas/LiveClientData.EventData"
           },
           "gameData": {
-            "$ref": "#/components/schemas/GameStats"
+            "$ref": "#/components/schemas/LiveClientData.GameStats"
           }
         },
         "required": [
@@ -646,7 +646,8 @@
           "champions",
           "activePlayer"
         ]
-      }
+      },
+      "x-endpoint": "LiveClientData"
     },
     "/liveclientdata/activeplayerabilities": {
       "get": {
@@ -670,7 +671,8 @@
           "abilities",
           "activePlayer"
         ]
-      }
+      },
+      "x-endpoint": "LiveClientData"
     },
     "/liveclientdata/activeplayername": {
       "get": {
@@ -692,7 +694,8 @@
         "tags": [
           "activePlayer"
         ]
-      }
+      },
+      "x-endpoint": "LiveClientData"
     },
     "/liveclientdata/activeplayerrunes": {
       "get": {
@@ -715,7 +718,8 @@
           "runes",
           "activePlayer"
         ]
-      }
+      },
+      "x-endpoint": "LiveClientData"
     },
     "/liveclientdata/allgamedata": {
       "get": {
@@ -748,7 +752,8 @@
         "tags": [
           "all"
         ]
-      }
+      },
+      "x-endpoint": "LiveClientData"
     },
     "/liveclientdata/eventdata": {
       "get": {
@@ -782,7 +787,8 @@
           "champions",
           "events"
         ]
-      }
+      },
+      "x-endpoint": "LiveClientData"
     },
     "/liveclientdata/gamestats": {
       "get": {
@@ -804,7 +810,8 @@
         "tags": [
           "game"
         ]
-      }
+      },
+      "x-endpoint": "LiveClientData"
     },
     "/liveclientdata/playeritems": {
       "get": {
@@ -840,7 +847,8 @@
           "items",
           "allPlayers"
         ]
-      }
+      },
+      "x-endpoint": "LiveClientData"
     },
     "/liveclientdata/playerlist": {
       "get": {
@@ -884,7 +892,8 @@
           "units",
           "allPlayers"
         ]
-      }
+      },
+      "x-endpoint": "LiveClientData"
     },
     "/liveclientdata/playermainrunes": {
       "get": {
@@ -917,7 +926,8 @@
           "allPlayers",
           "runes"
         ]
-      }
+      },
+      "x-endpoint": "LiveClientData"
     },
     "/liveclientdata/playerscores": {
       "get": {
@@ -950,7 +960,8 @@
           "allPlayers",
           "scores"
         ]
-      }
+      },
+      "x-endpoint": "LiveClientData"
     },
     "/liveclientdata/playersummonerspells": {
       "get": {
@@ -982,7 +993,8 @@
         "tags": [
           "allPlayers"
         ]
-      }
+      },
+      "x-endpoint": "LiveClientData"
     }
   }
 }

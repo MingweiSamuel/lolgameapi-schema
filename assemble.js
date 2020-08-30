@@ -11,6 +11,7 @@ openapi.paths = Object.fromEntries(Object.entries(openapi.paths)
     .filter(([ path, pathInfo ]) => {
         const returnType = returnTypes[path];
         if (undefined === returnType) return false;
+        pathInfo['x-endpoint'] = 'LiveClientData'; // TODO if there's more than one.
         if (null !== returnType)
             pathInfo.get.responses['200'].content['application/json'].schema = returnType;
         return true;

@@ -340,7 +340,7 @@ function main(inputName) {
     const fs = require('fs');
     const writeFileAsync = util.promisify(fs.writeFile);
 
-    const dtos = require('./dtos');
+    const dtos = require('../dtos');
 
     const json = require(`./${inputName}`);
     const jsonSchema = jsonToJsonSchema(json);

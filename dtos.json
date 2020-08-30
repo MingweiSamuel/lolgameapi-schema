@@ -316,7 +316,7 @@
     ]
   },
 
-  "PlayerAbility": {
+  "ActivePlayerAbility": {
     "type": "object",
     "properties": {
       "abilityLevel": {
@@ -343,7 +343,7 @@
       "rawDisplayName"
     ]
   },
-  "PlayerPassiveAbility": {
+  "ActivePlayerPassiveAbility": {
     "type": "object",
     "properties": {
       "displayName": {
@@ -366,23 +366,23 @@
       "rawDisplayName"
     ]
   },
-  "PlayerAbilities": {
+  "ActivePlayerAbilities": {
     "type": "object",
     "properties": {
       "Passive": {
-        "$ref": "#/components/schemas/PlayerPassiveAbility"
+        "$ref": "#/components/schemas/ActivePlayerPassiveAbility"
       },
       "Q": {
-        "$ref": "#/components/schemas/PlayerAbility"
+        "$ref": "#/components/schemas/ActivePlayerAbility"
       },
       "W": {
-        "$ref": "#/components/schemas/PlayerAbility"
+        "$ref": "#/components/schemas/ActivePlayerAbility"
       },
       "E": {
-        "$ref": "#/components/schemas/PlayerAbility"
+        "$ref": "#/components/schemas/ActivePlayerAbility"
       },
       "R": {
-        "$ref": "#/components/schemas/PlayerAbility"
+        "$ref": "#/components/schemas/ActivePlayerAbility"
       }
     },
     "required": [
@@ -564,7 +564,7 @@
     "type": "object",
     "properties": {
       "abilities": {
-        "$ref": "#/components/schemas/PlayerAbilities"
+        "$ref": "#/components/schemas/ActivePlayerAbilities"
       },
       "championStats": {
         "$ref": "#/components/schemas/PlayerChampionStats"

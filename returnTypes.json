@@ -1,0 +1,42 @@
+{
+    "/liveclientdata/activeplayer": {
+        "$ref": "#/components/schemas/ActivePlayer"
+    },
+    "/liveclientdata/activeplayerabilities": {
+        "$ref": "#/components/schemas/ActivePlayerAbilities"
+    },
+    "/liveclientdata/activeplayername": null,
+    "/liveclientdata/activeplayerrunes": {
+        "$ref": "#/components/schemas/ActivePlayerRunes"
+    },
+    "/liveclientdata/allgamedata": {
+        "$ref": "#/components/schemas/AllGameData"
+    },
+    "/liveclientdata/eventdata": {
+        "$ref": "#/components/schemas/EventData"
+    },
+    "/liveclientdata/gamestats": {
+        "$ref": "#/components/schemas/GameStats"
+    },
+    "/liveclientdata/playeritems": {
+        "type": "array",
+        "items": {
+            "$ref": "#/components/schemas/PlayerItem"
+        }
+    },
+    "/liveclientdata/playerlist": {
+        "type": "array",
+        "items": {
+            "$ref": "#/components/schemas/Player"
+        }
+    },
+    "/liveclientdata/playermainrunes": {
+        "$ref": "#/components/schemas/PlayerRunes"
+    },
+    "/liveclientdata/playerscores": {
+        "$ref": "#/components/schemas/PlayerScores"
+    },
+    "/liveclientdata/playersummonerspells": {
+        "$ref": "#/components/schemas/PlayerSummonerSpells"
+    }
+}

@@ -2,13 +2,13 @@
     "/liveclientdata/activeplayer": {
         "name": "ActivePlayer",
         "retval": {
-            "$ref": "#/components/schemas/ActivePlayer"
+            "$ref": "#/components/schemas/LiveClientData.ActivePlayer"
         }
     },
     "/liveclientdata/activeplayerabilities": {
         "name": "ActivePlayerAbilities",
         "retval": {
-            "$ref": "#/components/schemas/ActivePlayerAbilities"
+            "$ref": "#/components/schemas/LiveClientData.ActivePlayerAbilities"
         }
     },
     "/liveclientdata/activeplayername": {
@@ -20,25 +20,25 @@
     "/liveclientdata/activeplayerrunes": {
         "name": "ActivePlayerRunes",
         "retval": {
-            "$ref": "#/components/schemas/ActivePlayerRunes"
+            "$ref": "#/components/schemas/LiveClientData.ActivePlayerRunes"
         }
     },
     "/liveclientdata/allgamedata": {
         "name": "AllGameData",
         "retval": {
-            "$ref": "#/components/schemas/AllGameData"
+            "$ref": "#/components/schemas/LiveClientData.AllGameData"
         }
     },
     "/liveclientdata/eventdata": {
         "name": "EventData",
         "retval": {
-            "$ref": "#/components/schemas/EventData"
+            "$ref": "#/components/schemas/LiveClientData.EventData"
         }
     },
     "/liveclientdata/gamestats": {
         "name": "GameStats",
         "retval": {
-            "$ref": "#/components/schemas/GameStats"
+            "$ref": "#/components/schemas/LiveClientData.GameStats"
         }
     },
     "/liveclientdata/playeritems": {
@@ -46,7 +46,7 @@
         "retval": {
             "type": "array",
             "items": {
-                "$ref": "#/components/schemas/PlayerItem"
+                "$ref": "#/components/schemas/LiveClientData.PlayerItem"
             }
         }
     },
@@ -55,26 +55,26 @@
         "retval": {
             "type": "array",
             "items": {
-                "$ref": "#/components/schemas/Player"
+                "$ref": "#/components/schemas/LiveClientData.Player"
             }
         }
     },
     "/liveclientdata/playermainrunes": {
         "name": "PlayerMainRunes",
         "retval": {
-            "$ref": "#/components/schemas/PlayerRunes"
+            "$ref": "#/components/schemas/LiveClientData.PlayerRunes"
         }
     },
     "/liveclientdata/playerscores": {
         "name": "PlayerScores",
         "retval": {
-            "$ref": "#/components/schemas/PlayerScores"
+            "$ref": "#/components/schemas/LiveClientData.PlayerScores"
         }
     },
     "/liveclientdata/playersummonerspells": {
         "name": "PlayerSummonerSpells",
         "retval": {
-            "$ref": "#/components/schemas/PlayerSummonerSpells"
+            "$ref": "#/components/schemas/LiveClientData.PlayerSummonerSpells"
         }
     }
 }

@@ -393,7 +393,7 @@
       "W"
     ]
   },
-  "PlayerChampionStats": {
+  "ActivePlayerChampionStats": {
     "type": "object",
     "properties": {
       "abilityPower": {
@@ -512,7 +512,7 @@
       "tenacity"
     ]
   },
-  "PlayerStatRune": {
+  "ActivePlayerStatRune": {
     "type": "object",
     "properties": {
       "id": {
@@ -548,7 +548,7 @@
       "statRunes": {
         "type": "array",
         "items": {
-          "$ref": "#/components/schemas/PlayerStatRune"
+          "$ref": "#/components/schemas/ActivePlayerStatRune"
         }
       }
     },
@@ -567,7 +567,7 @@
         "$ref": "#/components/schemas/ActivePlayerAbilities"
       },
       "championStats": {
-        "$ref": "#/components/schemas/PlayerChampionStats"
+        "$ref": "#/components/schemas/ActivePlayerChampionStats"
       },
       "currentGold": {
         "type": "integer"

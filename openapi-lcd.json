@@ -619,8 +619,8 @@
     }
   },
   "info": {
-    "description": "League of Legends Game Client",
-    "title": "LoLClient",
+    "description": "League of Legends game client Live Client Data API",
+    "title": "LoL Live Client Data",
     "version": "1.0.0"
   },
   "openapi": "3.0.0",

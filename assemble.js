@@ -15,5 +15,7 @@ openapi.paths = Object.fromEntries(Object.entries(openapi.paths)
             pathInfo.get.responses['200'].content['application/json'].schema = returnType;
         return true;
     }));
+openapi.info.description = 'League of Legends game client Live Client Data API';
+openapi.info.title = 'LoL Live Client Data'
 
 writeFileAsync('./openapi-lcd.json', JSON.stringify(openapi, null, 2));

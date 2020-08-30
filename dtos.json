@@ -611,7 +611,6 @@
       }
     },
     "required": [
-      "activePlayer",
       "allPlayers",
       "events",
       "gameData"

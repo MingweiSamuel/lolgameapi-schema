@@ -222,13 +222,13 @@
       "LiveClientData.Event": {
         "type": "object",
         "properties": {
-          "LiveClientData.EventID": {
+          "EventID": {
             "type": "integer"
           },
-          "LiveClientData.EventName": {
+          "EventName": {
             "type": "string"
           },
-          "LiveClientData.EventTime": {
+          "EventTime": {
             "type": "number"
           },
           "KillerName": {
@@ -269,15 +269,15 @@
           }
         },
         "required": [
-          "LiveClientData.EventID",
-          "LiveClientData.EventName",
-          "LiveClientData.EventTime"
+          "EventID",
+          "EventName",
+          "EventTime"
         ]
       },
       "LiveClientData.EventData": {
         "type": "object",
         "properties": {
-          "LiveClientData.Events": {
+          "Events": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/LiveClientData.Event"
@@ -285,7 +285,7 @@
           }
         },
         "required": [
-          "LiveClientData.Events"
+          "Events"
         ]
       },
       "LiveClientData.GameStats": {

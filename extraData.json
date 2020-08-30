@@ -1,0 +1,80 @@
+{
+    "/liveclientdata/activeplayer": {
+        "name": "ActivePlayer",
+        "retval": {
+            "$ref": "#/components/schemas/ActivePlayer"
+        }
+    },
+    "/liveclientdata/activeplayerabilities": {
+        "name": "ActivePlayerAbilities",
+        "retval": {
+            "$ref": "#/components/schemas/ActivePlayerAbilities"
+        }
+    },
+    "/liveclientdata/activeplayername": {
+        "name": "ActivePlayerName",
+        "retval": {
+            "type": "string"
+        }
+    },
+    "/liveclientdata/activeplayerrunes": {
+        "name": "ActivePlayerRunes",
+        "retval": {
+            "$ref": "#/components/schemas/ActivePlayerRunes"
+        }
+    },
+    "/liveclientdata/allgamedata": {
+        "name": "AllGameData",
+        "retval": {
+            "$ref": "#/components/schemas/AllGameData"
+        }
+    },
+    "/liveclientdata/eventdata": {
+        "name": "EventData",
+        "retval": {
+            "$ref": "#/components/schemas/EventData"
+        }
+    },
+    "/liveclientdata/gamestats": {
+        "name": "GameStats",
+        "retval": {
+            "$ref": "#/components/schemas/GameStats"
+        }
+    },
+    "/liveclientdata/playeritems": {
+        "name": "PlayerItems",
+        "retval": {
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/PlayerItem"
+            }
+        }
+    },
+    "/liveclientdata/playerlist": {
+        "name": "PlayerList",
+        "retval": {
+            "type": "array",
+            "items": {
+                "$ref": "#/components/schemas/Player"
+            }
+        }
+    },
+    "/liveclientdata/playermainrunes": {
+        "name": "PlayerMainRunes",
+        "retval": {
+            "$ref": "#/components/schemas/PlayerRunes"
+        }
+    },
+    "/liveclientdata/playerscores": {
+        "name": "PlayerScores",
+        "retval": {
+            "$ref": "#/components/schemas/PlayerScores"
+        }
+    },
+    "/liveclientdata/playersummonerspells": {
+        "name": "PlayerSummonerSpells",
+        "retval": {
+            "$ref": "#/components/schemas/PlayerSummonerSpells"
+        }
+    }
+}

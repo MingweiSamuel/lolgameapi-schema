@@ -627,7 +627,7 @@
   "paths": {
     "/liveclientdata/activeplayer": {
       "get": {
-        "operationId": "GetLiveclientdataActiveplayer",
+        "operationId": "LiveClientData.getActivePlayer",
         "parameters": [],
         "responses": {
           "200": {
@@ -651,7 +651,7 @@
     },
     "/liveclientdata/activeplayerabilities": {
       "get": {
-        "operationId": "GetLiveclientdataActiveplayerabilities",
+        "operationId": "LiveClientData.getActivePlayerAbilities",
         "parameters": [],
         "responses": {
           "200": {
@@ -676,7 +676,7 @@
     },
     "/liveclientdata/activeplayername": {
       "get": {
-        "operationId": "GetLiveclientdataActiveplayername",
+        "operationId": "LiveClientData.getActivePlayerName",
         "parameters": [],
         "responses": {
           "200": {
@@ -699,7 +699,7 @@
     },
     "/liveclientdata/activeplayerrunes": {
       "get": {
-        "operationId": "GetLiveclientdataActiveplayerrunes",
+        "operationId": "LiveClientData.getActivePlayerRunes",
         "parameters": [],
         "responses": {
           "200": {
@@ -723,7 +723,7 @@
     },
     "/liveclientdata/allgamedata": {
       "get": {
-        "operationId": "GetLiveclientdataAllgamedata",
+        "operationId": "LiveClientData.getAllGameData",
         "parameters": [
           {
             "description": "ID of the next event you expect to see",
@@ -757,7 +757,7 @@
     },
     "/liveclientdata/eventdata": {
       "get": {
-        "operationId": "GetLiveclientdataEventdata",
+        "operationId": "LiveClientData.getEventData",
         "parameters": [
           {
             "description": "ID of the next event you expect to see",
@@ -792,7 +792,7 @@
     },
     "/liveclientdata/gamestats": {
       "get": {
-        "operationId": "GetLiveclientdataGamestats",
+        "operationId": "LiveClientData.getGameStats",
         "parameters": [],
         "responses": {
           "200": {
@@ -815,7 +815,7 @@
     },
     "/liveclientdata/playeritems": {
       "get": {
-        "operationId": "GetLiveclientdataPlayeritems",
+        "operationId": "LiveClientData.getPlayerItems",
         "parameters": [
           {
             "description": "Summoner name of player",
@@ -852,7 +852,7 @@
     },
     "/liveclientdata/playerlist": {
       "get": {
-        "operationId": "GetLiveclientdataPlayerlist",
+        "operationId": "LiveClientData.getPlayerList",
         "parameters": [
           {
             "description": "Heroes team ID. Optional, returns all players on all teams if null. ",
@@ -897,7 +897,7 @@
     },
     "/liveclientdata/playermainrunes": {
       "get": {
-        "operationId": "GetLiveclientdataPlayermainrunes",
+        "operationId": "LiveClientData.getPlayerMainRunes",
         "parameters": [
           {
             "description": "Summoner name of player",
@@ -931,7 +931,7 @@
     },
     "/liveclientdata/playerscores": {
       "get": {
-        "operationId": "GetLiveclientdataPlayerscores",
+        "operationId": "LiveClientData.getPlayerScores",
         "parameters": [
           {
             "description": "Summoner name of player",
@@ -965,7 +965,7 @@
     },
     "/liveclientdata/playersummonerspells": {
       "get": {
-        "operationId": "GetLiveclientdataPlayersummonerspells",
+        "operationId": "LiveClientData.getPlayerSummonerSpells",
         "parameters": [
           {
             "description": "Summoner name of player",

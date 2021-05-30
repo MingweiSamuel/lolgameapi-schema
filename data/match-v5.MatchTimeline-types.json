@@ -1,0 +1,549 @@
+{
+  "match-v5.MatchTimelineMetadata": {
+    "type": "object",
+    "properties": {
+      "dataVersion": {
+        "type": "string"
+      },
+      "matchId": {
+        "type": "string"
+      },
+      "participants": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "required": [
+      "dataVersion",
+      "matchId",
+      "participants"
+    ]
+  },
+  "match-v5.MatchTimelineInfoFrameEvent": {
+    "type": "object",
+    "properties": {
+      "realTimestamp": {
+        "type": "integer"
+      },
+      "timestamp": {
+        "type": "integer"
+      },
+      "type": {
+        "type": "string"
+      },
+      "itemId": {
+        "type": "integer"
+      },
+      "participantId": {
+        "type": "integer"
+      },
+      "levelUpType": {
+        "type": "string"
+      },
+      "skillSlot": {
+        "type": "integer"
+      },
+      "creatorId": {
+        "type": "integer"
+      },
+      "wardType": {
+        "type": "string"
+      },
+      "level": {
+        "type": "integer"
+      },
+      "assistingParticipantIds": {
+        "type": "array",
+        "items": {
+          "type": "integer"
+        }
+      },
+      "bounty": {
+        "type": "integer"
+      },
+      "killStreakLength": {
+        "type": "integer"
+      },
+      "killerId": {
+        "type": "integer"
+      },
+      "position": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameParticipantFramePosition"
+      },
+      "victimDamageDealt": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameEventVictimDamageDealt"
+        }
+      },
+      "victimDamageReceived": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameEventVictimDamageDealt"
+        }
+      },
+      "victimId": {
+        "type": "integer"
+      },
+      "killType": {
+        "type": "string"
+      },
+      "laneType": {
+        "type": "string"
+      },
+      "teamId": {
+        "type": "integer",
+        "x-enum": "team"
+      },
+      "multiKillLength": {
+        "type": "integer"
+      },
+      "killerTeamId": {
+        "type": "integer",
+        "x-enum": "team"
+      },
+      "monsterType": {
+        "type": "string"
+      },
+      "monsterSubType": {
+        "type": "string"
+      },
+      "buildingType": {
+        "type": "string"
+      },
+      "towerType": {
+        "type": "string"
+      },
+      "afterId": {
+        "type": "integer"
+      },
+      "beforeId": {
+        "type": "integer"
+      },
+      "goldGain": {
+        "type": "integer"
+      },
+      "gameId": {
+        "type": "integer"
+      },
+      "winningTeam": {
+        "type": "integer"
+      },
+      "transformType": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "timestamp",
+      "type"
+    ]
+  },
+  "match-v5.MatchTimelineInfoFrameParticipantFrameChampionStats": {
+    "type": "object",
+    "properties": {
+      "abilityHaste": {
+        "type": "integer"
+      },
+      "abilityPower": {
+        "type": "integer"
+      },
+      "armor": {
+        "type": "integer"
+      },
+      "armorPen": {
+        "type": "integer"
+      },
+      "armorPenPercent": {
+        "type": "integer"
+      },
+      "attackDamage": {
+        "type": "integer"
+      },
+      "attackSpeed": {
+        "type": "integer"
+      },
+      "bonusArmorPenPercent": {
+        "type": "integer"
+      },
+      "bonusMagicPenPercent": {
+        "type": "integer"
+      },
+      "ccReduction": {
+        "type": "integer"
+      },
+      "cooldownReduction": {
+        "type": "integer"
+      },
+      "health": {
+        "type": "integer"
+      },
+      "healthMax": {
+        "type": "integer"
+      },
+      "healthRegen": {
+        "type": "integer"
+      },
+      "lifesteal": {
+        "type": "integer"
+      },
+      "magicPen": {
+        "type": "integer"
+      },
+      "magicPenPercent": {
+        "type": "integer"
+      },
+      "magicResist": {
+        "type": "integer"
+      },
+      "movementSpeed": {
+        "type": "integer"
+      },
+      "omnivamp": {
+        "type": "integer"
+      },
+      "physicalVamp": {
+        "type": "integer"
+      },
+      "power": {
+        "type": "integer"
+      },
+      "powerMax": {
+        "type": "integer"
+      },
+      "powerRegen": {
+        "type": "integer"
+      },
+      "spellVamp": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "abilityHaste",
+      "abilityPower",
+      "armor",
+      "armorPen",
+      "armorPenPercent",
+      "attackDamage",
+      "attackSpeed",
+      "bonusArmorPenPercent",
+      "bonusMagicPenPercent",
+      "ccReduction",
+      "cooldownReduction",
+      "health",
+      "healthMax",
+      "healthRegen",
+      "lifesteal",
+      "magicPen",
+      "magicPenPercent",
+      "magicResist",
+      "movementSpeed",
+      "omnivamp",
+      "physicalVamp",
+      "power",
+      "powerMax",
+      "powerRegen",
+      "spellVamp"
+    ]
+  },
+  "match-v5.MatchTimelineInfoFrameParticipantFrameDamageStats": {
+    "type": "object",
+    "properties": {
+      "magicDamageDone": {
+        "type": "integer"
+      },
+      "magicDamageDoneToChampions": {
+        "type": "integer"
+      },
+      "magicDamageTaken": {
+        "type": "integer"
+      },
+      "physicalDamageDone": {
+        "type": "integer"
+      },
+      "physicalDamageDoneToChampions": {
+        "type": "integer"
+      },
+      "physicalDamageTaken": {
+        "type": "integer"
+      },
+      "totalDamageDone": {
+        "type": "integer"
+      },
+      "totalDamageDoneToChampions": {
+        "type": "integer"
+      },
+      "totalDamageTaken": {
+        "type": "integer"
+      },
+      "trueDamageDone": {
+        "type": "integer"
+      },
+      "trueDamageDoneToChampions": {
+        "type": "integer"
+      },
+      "trueDamageTaken": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "magicDamageDone",
+      "magicDamageDoneToChampions",
+      "magicDamageTaken",
+      "physicalDamageDone",
+      "physicalDamageDoneToChampions",
+      "physicalDamageTaken",
+      "totalDamageDone",
+      "totalDamageDoneToChampions",
+      "totalDamageTaken",
+      "trueDamageDone",
+      "trueDamageDoneToChampions",
+      "trueDamageTaken"
+    ]
+  },
+  "match-v5.MatchTimelineInfoFrameParticipantFramePosition": {
+    "type": "object",
+    "properties": {
+      "x": {
+        "type": "integer"
+      },
+      "y": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "x",
+      "y"
+    ]
+  },
+  "match-v5.MatchTimelineInfoFrameParticipantFrame": {
+    "type": "object",
+    "properties": {
+      "championStats": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameParticipantFrameChampionStats"
+      },
+      "currentGold": {
+        "type": "integer"
+      },
+      "damageStats": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameParticipantFrameDamageStats"
+      },
+      "goldPerSecond": {
+        "type": "integer"
+      },
+      "jungleMinionsKilled": {
+        "type": "integer"
+      },
+      "level": {
+        "type": "integer"
+      },
+      "minionsKilled": {
+        "type": "integer"
+      },
+      "participantId": {
+        "type": "integer"
+      },
+      "position": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameParticipantFramePosition"
+      },
+      "timeEnemySpentControlled": {
+        "type": "integer"
+      },
+      "totalGold": {
+        "type": "integer"
+      },
+      "xp": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "championStats",
+      "currentGold",
+      "damageStats",
+      "goldPerSecond",
+      "jungleMinionsKilled",
+      "level",
+      "minionsKilled",
+      "participantId",
+      "position",
+      "timeEnemySpentControlled",
+      "totalGold",
+      "xp"
+    ]
+  },
+  "match-v5.MatchTimelineInfoFrameParticipantFrames": {
+    "type": "object",
+    "properties": {
+      "1": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameParticipantFrame"
+      },
+      "2": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameParticipantFrame"
+      },
+      "3": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameParticipantFrame"
+      },
+      "4": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameParticipantFrame"
+      },
+      "5": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameParticipantFrame"
+      },
+      "6": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameParticipantFrame"
+      },
+      "7": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameParticipantFrame"
+      },
+      "8": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameParticipantFrame"
+      },
+      "9": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameParticipantFrame"
+      },
+      "10": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameParticipantFrame"
+      }
+    },
+    "required": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ]
+  },
+  "match-v5.MatchTimelineInfoFrame": {
+    "type": "object",
+    "properties": {
+      "events": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameEvent"
+        }
+      },
+      "participantFrames": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrameParticipantFrames"
+      },
+      "timestamp": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "events",
+      "participantFrames",
+      "timestamp"
+    ]
+  },
+  "match-v5.MatchTimelineInfoFrameEventVictimDamageDealt": {
+    "type": "object",
+    "properties": {
+      "basic": {
+        "type": "boolean"
+      },
+      "magicDamage": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "string"
+      },
+      "participantId": {
+        "type": "integer"
+      },
+      "physicalDamage": {
+        "type": "integer"
+      },
+      "spellName": {
+        "type": "string"
+      },
+      "spellSlot": {
+        "type": "integer"
+      },
+      "trueDamage": {
+        "type": "integer"
+      },
+      "type": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "basic",
+      "magicDamage",
+      "name",
+      "participantId",
+      "physicalDamage",
+      "spellName",
+      "spellSlot",
+      "trueDamage",
+      "type"
+    ]
+  },
+  "match-v5.MatchTimelineInfoParticipant": {
+    "type": "object",
+    "properties": {
+      "participantId": {
+        "type": "integer"
+      },
+      "puuid": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "participantId",
+      "puuid"
+    ]
+  },
+  "match-v5.MatchTimelineInfo": {
+    "type": "object",
+    "properties": {
+      "frameInterval": {
+        "type": "integer"
+      },
+      "frames": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/match-v5.MatchTimelineInfoFrame"
+        }
+      },
+      "gameId": {
+        "type": "integer"
+      },
+      "participants": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/match-v5.MatchTimelineInfoParticipant"
+        }
+      }
+    },
+    "required": [
+      "frameInterval",
+      "frames",
+      "gameId",
+      "participants"
+    ]
+  },
+  "match-v5.MatchTimeline": {
+    "type": "object",
+    "properties": {
+      "metadata": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineMetadata"
+      },
+      "info": {
+        "$ref": "#/components/schemas/match-v5.MatchTimelineInfo"
+      }
+    },
+    "required": [
+      "metadata",
+      "info"
+    ]
+  }
+}

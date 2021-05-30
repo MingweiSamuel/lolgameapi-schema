@@ -95,6 +95,19 @@ function combineTypes(a, b) {
     return out;
 }
 
+const enumNames = {
+    championId: 'champion',
+    gameMode: 'gameMode',
+    gameType: 'gameType',
+
+    mapId: 'map',
+
+    queueId: 'queue',
+
+    teamId: 'team',
+    killerTeamId: 'team',
+};
+
 function jsonToJsonSchema(input) {
     if (null === input) {
         throw Error('Cannot handle null.');
@@ -110,6 +123,9 @@ function jsonToJsonSchema(input) {
         const properties = {};
         for (const [ key, val ] of Object.entries(input)) {
             properties[key] = jsonToJsonSchema(val);
+            if (enumNames[key]) {
+                properties[key]['x-enum'] = enumNames[key];
+            }
         }
         return {
             type: 'object',
@@ -140,27 +156,9 @@ function jsonToJsonSchema(input) {
     throw Error(`Unexpected input: ${input}`);
 }
 
-function jsonSchemaToTypes(input, name) {
-    // const queue = [ input ];
-    // const stack = [];
+function jsonSchemaToTypes(input, id, types = {}, typeNames = {}) {
 
-    // while (queue.length) {
-    //     const item = queue.pop();
-    //     stack.unshift(item);
-    //     if ('array' === input.type) {
-    //         queue.unshift(input.items);
-    //     }
-    // }
-
-    let _id = 10000;
-    function getId() {
-        return '' + _id++;
-    }
-
-    const types = {};
-    const typeNames = {};
-
-    function helper(input, names) {
+    function helper(input, id, names) {
         if ('array' === input.type) {
             if (0 >= input.items.length) {
                 console.warn('Input has empty array, cannot infer types.');
@@ -168,7 +166,7 @@ function jsonSchemaToTypes(input, name) {
             }
 
             for (let i = 0; i < input.items.length; i++) {
-                input.items[i] = helper(input.items[i], names.concat([ i ]));
+                input.items[i] = helper(input.items[i], id.endsWith('s') ? id.slice(0, -1) : id, names.concat([ i ]));
             }
 
             // Enforce type consolidation.
@@ -182,18 +180,11 @@ function jsonSchemaToTypes(input, name) {
             return input;
         }
         if ('object' === input.type) {
+            const hasNumericKeys = Object.keys(input.properties).every(key => /\d+/.test(key));
+            const arrayItemId = id.endsWith('s') ? id.slice(0, -1) : id;
             for (const [ key, val ] of Object.entries(input.properties)) {
-                input.properties[key] = helper(val, names.concat([ key ]));
+                input.properties[key] = helper(val, hasNumericKeys ? arrayItemId : `${id}${capitalize(key)}`, names.concat([ key ]));
             }
-
-            // // If this type already exists in dtos.json.
-            // for (const [ id, typeSpec ] of Object.entries(dtos)) {
-            //     if (isSubType(input, typeSpec) && isSubType(typeSpec, input)) {
-            //         return {
-            //             $ref: `#/components/schemas/${id}`,
-            //         };
-            //     }
-            // }
 
             // If this type already exists.
             for (const [ id, typeSpec ] of Object.entries(types)) {
@@ -238,7 +229,6 @@ function jsonSchemaToTypes(input, name) {
             }
 
             // This type does not already exist, set it.
-            const id = getId();
             (typeNames[id] || (typeNames[id] = [])).push(names);
             types[id] = input;
             return {
@@ -247,40 +237,9 @@ function jsonSchemaToTypes(input, name) {
         }
         return input;
     }
-    helper(input, [ name ]);
-
-    // const typeRenames = {};
-    // for (const [ id, namesArrays ] of Object.entries(typeNames)) {
-
-    // }
-    // for (const name of Object.keys(types)) {
-    //     console.log(name, camelCase(name));
-    // }
+    helper(input, id, [ id ]);
 
     return types;
-    // const out = {};
-    // Object.keys(types).forEach(id => {
-    //     const names = typeNames[id]
-    //         .map(name => name
-    //             .map(x => x.toString())
-    //             .map(camelCase)
-    //             .join(''));
-    //     const name = names[0];
-    //     // out[name] = {
-    //     //     id,
-    //     //     names,
-    //     //     type: types[id]
-    //     // };
-    //     out[id + name] = types[id];
-    // });
-    // return out;
-    // return Object.keys(types).map(id => {
-    //     return {
-    //         names: typeNames[id],
-    //         type: types[id],
-    //     }
-    // });
-    // return { types, typeNames };
 }
 
 function findExistingDtos(types, existingDtos) {
@@ -331,31 +290,42 @@ function findExistingDtos(types, existingDtos) {
     } while (changed);
 }
 
-function main(inputName) {
-    if (!inputName) {
-        console.error('Must supply inputName.');
+function main(id, ...inputNames) {
+    const types = {};
+    const typeNames = {};
+
+    if (!inputNames || !inputNames.length) {
+        console.error('Must supply inputName(s).');
         process.exit(1);
     }
+    if (!id) {
+        console.error('Must supply root ID.');
+        process.exit(1);
+    }
+    console.log(inputNames);
+
     const util = require('util');
     const fs = require('fs');
     const writeFileAsync = util.promisify(fs.writeFile);
 
-    const dtos = require('../dtos');
+    for (const inputName of inputNames) {
+        const json = require(`./${inputName}`);
+        const jsonSchema = jsonToJsonSchema(json);
+        // {
+        //     const jsonSchemaStr = JSON.stringify(jsonSchema, null, 2);
+        //     writeFileAsync(`./${inputName}-spec.json`, jsonSchemaStr);
+        // }
 
-    const json = require(`./${inputName}`);
-    const jsonSchema = jsonToJsonSchema(json);
-    {
-        const jsonSchemaStr = JSON.stringify(jsonSchema, null, 2);
-        writeFileAsync(`./${inputName}-spec.json`, jsonSchemaStr);
+        jsonSchemaToTypes(jsonSchema, id, types, typeNames);
+
+        // findExistingDtos(types, require('../dtos'));
     }
 
-    const jsonTypes = jsonSchemaToTypes(jsonSchema, inputName);
-    findExistingDtos(jsonTypes, dtos);
-    Object.keys(jsonTypes).forEach(name => console.log(name));
+    Object.keys(types).forEach(name => console.log(name));
     {
-        const jsonTypesStr = JSON.stringify(jsonTypes, null, 2);
-        writeFileAsync(`./${inputName}-types.json`, jsonTypesStr);
+        const jsonTypesStr = JSON.stringify(types, null, 2);
+        writeFileAsync(`./${id}-types.json`, jsonTypesStr);
     }
 }
 
-main(process.argv[2]);
+main(...process.argv.slice(2));

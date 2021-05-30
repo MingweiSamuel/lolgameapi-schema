@@ -1,5 +1,6 @@
 {
   "match-v5.MatchMetadata": {
+    "title": "MatchMetadata",
     "type": "object",
     "properties": {
       "dataVersion": {
@@ -22,6 +23,7 @@
     ]
   },
   "match-v5.MatchInfoParticipantPerksStatPerks": {
+    "title": "MatchInfoParticipantPerksStatPerks",
     "type": "object",
     "properties": {
       "defense": {
@@ -41,6 +43,7 @@
     ]
   },
   "match-v5.MatchInfoParticipantPerksStyleSelection": {
+    "title": "MatchInfoParticipantPerksStyleSelection",
     "type": "object",
     "properties": {
       "perk": {
@@ -64,6 +67,7 @@
     ]
   },
   "match-v5.MatchInfoParticipantPerksStyle": {
+    "title": "MatchInfoParticipantPerksStyle",
     "type": "object",
     "properties": {
       "description": {
@@ -86,6 +90,7 @@
     ]
   },
   "match-v5.MatchInfoParticipantPerks": {
+    "title": "MatchInfoParticipantPerks",
     "type": "object",
     "properties": {
       "statPerks": {
@@ -104,6 +109,7 @@
     ]
   },
   "match-v5.MatchInfoParticipant": {
+    "title": "MatchInfoParticipant",
     "type": "object",
     "properties": {
       "assists": {
@@ -521,6 +527,7 @@
     ]
   },
   "match-v5.MatchInfoTeamBan": {
+    "title": "MatchInfoTeamBan",
     "type": "object",
     "properties": {
       "championId": {
@@ -537,6 +544,7 @@
     ]
   },
   "match-v5.MatchInfoTeamObjectivesBaron": {
+    "title": "MatchInfoTeamObjectivesTower",
     "type": "object",
     "properties": {
       "first": {
@@ -552,6 +560,7 @@
     ]
   },
   "match-v5.MatchInfoTeamObjectives": {
+    "title": "MatchInfoTeamObjectives",
     "type": "object",
     "properties": {
       "baron": {
@@ -583,6 +592,7 @@
     ]
   },
   "match-v5.MatchInfoTeam": {
+    "title": "MatchInfoTeam",
     "type": "object",
     "properties": {
       "bans": {
@@ -610,6 +620,7 @@
     ]
   },
   "match-v5.MatchInfo": {
+    "title": "MatchInfo",
     "type": "object",
     "properties": {
       "gameCreation": {
@@ -679,6 +690,7 @@
     ]
   },
   "match-v5.Match": {
+    "title": "Match",
     "type": "object",
     "properties": {
       "metadata": {

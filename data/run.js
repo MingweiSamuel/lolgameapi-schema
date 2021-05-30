@@ -180,6 +180,8 @@ function jsonSchemaToTypes(input, id, types = {}, typeNames = {}) {
             return input;
         }
         if ('object' === input.type) {
+            input = { title: id.split('.').pop(), ...input }; // HACK to add title.
+
             const hasNumericKeys = Object.keys(input.properties).every(key => /\d+/.test(key));
             const arrayItemId = id.endsWith('s') ? id.slice(0, -1) : id;
             for (const [ key, val ] of Object.entries(input.properties)) {

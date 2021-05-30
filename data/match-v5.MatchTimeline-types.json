@@ -1,5 +1,6 @@
 {
   "match-v5.MatchTimelineMetadata": {
+    "title": "MatchTimelineMetadata",
     "type": "object",
     "properties": {
       "dataVersion": {
@@ -22,6 +23,7 @@
     ]
   },
   "match-v5.MatchTimelineInfoFrameEvent": {
+    "title": "MatchTimelineInfoFrameEvent",
     "type": "object",
     "properties": {
       "realTimestamp": {
@@ -144,6 +146,7 @@
     ]
   },
   "match-v5.MatchTimelineInfoFrameParticipantFrameChampionStats": {
+    "title": "MatchTimelineInfoFrameParticipantFrameChampionStats",
     "type": "object",
     "properties": {
       "abilityHaste": {
@@ -251,6 +254,7 @@
     ]
   },
   "match-v5.MatchTimelineInfoFrameParticipantFrameDamageStats": {
+    "title": "MatchTimelineInfoFrameParticipantFrameDamageStats",
     "type": "object",
     "properties": {
       "magicDamageDone": {
@@ -306,6 +310,7 @@
     ]
   },
   "match-v5.MatchTimelineInfoFrameParticipantFramePosition": {
+    "title": "MatchTimelineInfoFrameParticipantFramePosition",
     "type": "object",
     "properties": {
       "x": {
@@ -321,6 +326,7 @@
     ]
   },
   "match-v5.MatchTimelineInfoFrameParticipantFrame": {
+    "title": "MatchTimelineInfoFrameParticipantFrame",
     "type": "object",
     "properties": {
       "championStats": {
@@ -376,6 +382,7 @@
     ]
   },
   "match-v5.MatchTimelineInfoFrameParticipantFrames": {
+    "title": "MatchTimelineInfoFrameParticipantFrames",
     "type": "object",
     "properties": {
       "1": {
@@ -423,6 +430,7 @@
     ]
   },
   "match-v5.MatchTimelineInfoFrame": {
+    "title": "MatchTimelineInfoFrame",
     "type": "object",
     "properties": {
       "events": {
@@ -445,6 +453,7 @@
     ]
   },
   "match-v5.MatchTimelineInfoFrameEventVictimDamageDealt": {
+    "title": "MatchTimelineInfoFrameEventVictimDamageReceived",
     "type": "object",
     "properties": {
       "basic": {
@@ -488,6 +497,7 @@
     ]
   },
   "match-v5.MatchTimelineInfoParticipant": {
+    "title": "MatchTimelineInfoParticipant",
     "type": "object",
     "properties": {
       "participantId": {
@@ -503,6 +513,7 @@
     ]
   },
   "match-v5.MatchTimelineInfo": {
+    "title": "MatchTimelineInfo",
     "type": "object",
     "properties": {
       "frameInterval": {
@@ -532,6 +543,7 @@
     ]
   },
   "match-v5.MatchTimeline": {
+    "title": "MatchTimeline",
     "type": "object",
     "properties": {
       "metadata": {

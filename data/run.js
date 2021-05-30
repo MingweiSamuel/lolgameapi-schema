@@ -61,7 +61,7 @@ function isSubType(b, p) {
 }
 
 function combineTypes(a, b) {
-    const out = { ...a, ...b };
+    const out = { ...b, ...a };
 
     if (a.$ref) {
         if (a.$ref !== b.$ref)

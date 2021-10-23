@@ -1,0 +1,20 @@
+{
+  "LiveClientData.AllGameData.ActivePlayer.Abilities.E": "LiveClientData.Ability",
+  "LiveClientData.AllGameData.ActivePlayer.Abilities.Passive": "LiveClientData.Passive",
+  "LiveClientData.AllGameData.ActivePlayer.Abilities": "LiveClientData.ActivePlayerAbilities",
+  "LiveClientData.AllGameData.ActivePlayer.ChampionStats": "LiveClientData.PlayerChampionStats",
+  "LiveClientData.AllGameData.ActivePlayer.FullRunes.GeneralRunes.0": "LiveClientData.GeneralRune",
+  "LiveClientData.AllGameData.ActivePlayer.FullRunes.StatRunes.0": "LiveClientData.StatRune",
+  "LiveClientData.AllGameData.ActivePlayer.FullRunes": "LiveClientData.ActivePlayerRunes",
+  "LiveClientData.AllGameData.ActivePlayer": "LiveClientData.ActivePlayer",
+  "LiveClientData.AllGameData.AllPlayers.0.Items.0": "LiveClientData.PlayerItem",
+  "LiveClientData.AllGameData.AllPlayers.0.Runes": "LiveClientData.PlayerRunes",
+  "LiveClientData.AllGameData.AllPlayers.0.Scores": "LiveClientData.PlayerScores",
+  "LiveClientData.AllGameData.AllPlayers.0.SummonerSpells.SummonerSpellOne": "LiveClientData.PlayerSummonerSpell",
+  "LiveClientData.AllGameData.AllPlayers.0.SummonerSpells": "LiveClientData.PlayerSummonerSpells",
+  "LiveClientData.AllGameData.AllPlayers.0": "LiveClientData.Player",
+  "LiveClientData.AllGameData.Events.Events.0": "LiveClientData.Event",
+  "LiveClientData.AllGameData.Events": "LiveClientData.EventData",
+  "LiveClientData.AllGameData.GameData": "LiveClientData.GameStats",
+  "LiveClientData.AllGameData": "LiveClientData.AllGameData"
+}

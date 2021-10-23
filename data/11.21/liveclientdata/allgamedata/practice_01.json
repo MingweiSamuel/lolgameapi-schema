@@ -1,0 +1,770 @@
+{
+	"activePlayer": {
+		"abilities": {
+			"E": {
+				"abilityLevel": 5,
+				"displayName": "Grasping Roots",
+				"id": "ZyraE",
+				"rawDescription": "GeneratedTip_Spell_ZyraE_Description",
+				"rawDisplayName": "GeneratedTip_Spell_ZyraE_DisplayName"
+			},
+			"Passive": {
+				"displayName": "Garden of Thorns",
+				"id": "ZyraP",
+				"rawDescription": "GeneratedTip_Passive_ZyraP_Description",
+				"rawDisplayName": "GeneratedTip_Passive_ZyraP_DisplayName"
+			},
+			"Q": {
+				"abilityLevel": 5,
+				"displayName": "Deadly Spines",
+				"id": "ZyraQ",
+				"rawDescription": "GeneratedTip_Spell_ZyraQ_Description",
+				"rawDisplayName": "GeneratedTip_Spell_ZyraQ_DisplayName"
+			},
+			"R": {
+				"abilityLevel": 3,
+				"displayName": "Stranglethorns",
+				"id": "ZyraR",
+				"rawDescription": "GeneratedTip_Spell_ZyraR_Description",
+				"rawDisplayName": "GeneratedTip_Spell_ZyraR_DisplayName"
+			},
+			"W": {
+				"abilityLevel": 5,
+				"displayName": "Rampant Growth",
+				"id": "ZyraW",
+				"rawDescription": "GeneratedTip_Spell_ZyraW_Description",
+				"rawDisplayName": "GeneratedTip_Spell_ZyraW_DisplayName"
+			}
+		},
+		"championStats": {
+			"abilityHaste": 68.0,
+			"abilityPower": 722.931884765625,
+			"armor": 84.80001068115235,
+			"armorPenetrationFlat": 0.0,
+			"armorPenetrationPercent": 1.0,
+			"attackDamage": 162.483154296875,
+			"attackRange": 575.0,
+			"attackSpeed": 0.8491874933242798,
+			"bonusArmorPenetrationPercent": 1.0,
+			"bonusMagicPenetrationPercent": 1.0,
+			"critChance": 0.0,
+			"critDamage": 175.0,
+			"currentHealth": 1721.1146240234376,
+			"healShieldPower": 0.0,
+			"healthRegenRate": 2.8000001907348635,
+			"lifeSteal": 0.0,
+			"magicLethality": 0.0,
+			"magicPenetrationFlat": 18.0,
+			"magicPenetrationPercent": 0.6000000238418579,
+			"magicResist": 40.810001373291019,
+			"maxHealth": 2587.0,
+			"moveSpeed": 385.0,
+			"omnivamp": 0.0,
+			"physicalLethality": 0.0,
+			"physicalVamp": 0.0,
+			"resourceMax": 1693.0,
+			"resourceRegenRate": 25.889999389648439,
+			"resourceType": "MANA",
+			"resourceValue": 1693.0,
+			"spellVamp": 0.0,
+			"tenacity": 0.0
+		},
+		"currentGold": 2387.336181640625,
+		"fullRunes": {
+			"generalRunes": [
+				{
+					"displayName": "Arcane Comet",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				{
+					"displayName": "Manaflow Band",
+					"id": 8226,
+					"rawDescription": "perk_tooltip_8226",
+					"rawDisplayName": "perk_displayname_8226"
+				},
+				{
+					"displayName": "Transcendence",
+					"id": 8210,
+					"rawDescription": "perk_tooltip_Transcendence",
+					"rawDisplayName": "perk_displayname_Transcendence"
+				},
+				{
+					"displayName": "Scorch",
+					"id": 8237,
+					"rawDescription": "perk_tooltip_Scorch",
+					"rawDisplayName": "perk_displayname_Scorch"
+				},
+				{
+					"displayName": "Taste of Blood",
+					"id": 8139,
+					"rawDescription": "perk_tooltip_TasteOfBlood",
+					"rawDisplayName": "perk_displayname_TasteOfBlood"
+				},
+				{
+					"displayName": "Zombie Ward",
+					"id": 8136,
+					"rawDescription": "perk_tooltip_ZombieWard",
+					"rawDisplayName": "perk_displayname_ZombieWard"
+				}
+			],
+			"keystone": {
+				"displayName": "Arcane Comet",
+				"id": 8229,
+				"rawDescription": "perk_tooltip_ArcaneComet",
+				"rawDisplayName": "perk_displayname_ArcaneComet"
+			},
+			"primaryRuneTree": {
+				"displayName": "Sorcery",
+				"id": 8200,
+				"rawDescription": "perkstyle_tooltip_7202",
+				"rawDisplayName": "perkstyle_displayname_7202"
+			},
+			"secondaryRuneTree": {
+				"displayName": "Domination",
+				"id": 8100,
+				"rawDescription": "perkstyle_tooltip_7200",
+				"rawDisplayName": "perkstyle_displayname_7200"
+			},
+			"statRunes": [
+				{
+					"id": 5007,
+					"rawDescription": "perk_tooltip_StatModCooldownReductionScaling"
+				},
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5001,
+					"rawDescription": "perk_tooltip_StatModHealthScaling"
+				}
+			]
+		},
+		"level": 18,
+		"summonerName": "LugnutsK"
+	},
+	"allPlayers": [
+		{
+			"championName": "Zyra",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Liandry's Anguish",
+					"itemID": 6653,
+					"price": 1000,
+					"rawDescription": "GeneratedTip_Item_6653_Description",
+					"rawDisplayName": "Item_6653_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Morellonomicon",
+					"itemID": 3165,
+					"price": 450,
+					"rawDescription": "GeneratedTip_Item_3165_Description",
+					"rawDisplayName": "Item_3165_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Sorcerer's Shoes",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "GeneratedTip_Item_3020_Description",
+					"rawDisplayName": "Item_3020_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Demonic Embrace",
+					"itemID": 4637,
+					"price": 815,
+					"rawDescription": "GeneratedTip_Item_4637_Description",
+					"rawDisplayName": "Item_4637_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Rabadon's Deathcap",
+					"itemID": 3089,
+					"price": 1100,
+					"rawDescription": "GeneratedTip_Item_3089_Description",
+					"rawDisplayName": "Item_3089_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Void Staff",
+					"itemID": 3135,
+					"price": 600,
+					"rawDescription": "GeneratedTip_Item_3135_Description",
+					"rawDisplayName": "Item_3135_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Zyra",
+			"rawSkinName": "game_character_skin_displayname_Zyra_4",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Arcane Comet",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 0,
+				"creepScore": 420,
+				"deaths": 1,
+				"kills": 9,
+				"wardScore": 10.846680641174317
+			},
+			"skinID": 4,
+			"skinName": "Dragon Sorceress Zyra",
+			"summonerName": "LugnutsK",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Karthus",
+			"isBot": true,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Seraph's Embrace",
+					"itemID": 3040,
+					"price": 3000,
+					"rawDescription": "GeneratedTip_Item_3040_Description",
+					"rawDisplayName": "Item_3040_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Liandry's Anguish",
+					"itemID": 6653,
+					"price": 1000,
+					"rawDescription": "GeneratedTip_Item_6653_Description",
+					"rawDisplayName": "Item_6653_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Sorcerer's Shoes",
+					"itemID": 3020,
+					"price": 800,
+					"rawDescription": "GeneratedTip_Item_3020_Description",
+					"rawDisplayName": "Item_3020_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Blasting Wand",
+					"itemID": 1026,
+					"price": 850,
+					"rawDescription": "GeneratedTip_Item_1026_Description",
+					"rawDisplayName": "Item_1026_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Seeker's Armguard",
+					"itemID": 3191,
+					"price": 265,
+					"rawDescription": "GeneratedTip_Item_3191_Description",
+					"rawDisplayName": "Item_3191_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Karthus",
+			"respawnTimer": 10.277252197265625,
+			"runes": {
+				"keystone": {
+					"displayName": "Arcane Comet",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 0,
+				"creepScore": 200,
+				"deaths": 9,
+				"kills": 0,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Karthus Bot",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Exhaust",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerExhaust_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerExhaust_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		}
+	],
+	"events": {
+		"Events": [
+			{
+				"EventID": 0,
+				"EventName": "GameStart",
+				"EventTime": 0.029152600094676019
+			},
+			{
+				"EventID": 1,
+				"EventName": "MinionsSpawning",
+				"EventTime": 65.05770874023438
+			},
+			{
+				"Assisters": [],
+				"EventID": 2,
+				"EventName": "ChampionKill",
+				"EventTime": 274.527099609375,
+				"KillerName": "LugnutsK",
+				"VictimName": "Karthus Bot"
+			},
+			{
+				"EventID": 3,
+				"EventName": "FirstBlood",
+				"EventTime": 274.527099609375,
+				"Recipient": "LugnutsK"
+			},
+			{
+				"Acer": "LugnutsK",
+				"AcingTeam": "ORDER",
+				"EventID": 4,
+				"EventName": "Ace",
+				"EventTime": 274.527099609375
+			},
+			{
+				"Assisters": [],
+				"EventID": 5,
+				"EventName": "ChampionKill",
+				"EventTime": 370.5383605957031,
+				"KillerName": "LugnutsK",
+				"VictimName": "Karthus Bot"
+			},
+			{
+				"Acer": "LugnutsK",
+				"AcingTeam": "ORDER",
+				"EventID": 6,
+				"EventName": "Ace",
+				"EventTime": 370.5383605957031
+			},
+			{
+				"Assisters": [],
+				"EventID": 7,
+				"EventName": "ChampionKill",
+				"EventTime": 483.12872314453127,
+				"KillerName": "LugnutsK",
+				"VictimName": "Karthus Bot"
+			},
+			{
+				"Acer": "LugnutsK",
+				"AcingTeam": "ORDER",
+				"EventID": 8,
+				"EventName": "Ace",
+				"EventTime": 483.12872314453127
+			},
+			{
+				"Assisters": [],
+				"DragonType": "Fire",
+				"EventID": 9,
+				"EventName": "DragonKill",
+				"EventTime": 533.6560668945313,
+				"KillerName": "LugnutsK",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [],
+				"EventID": 10,
+				"EventName": "ChampionKill",
+				"EventTime": 560.6956176757813,
+				"KillerName": "LugnutsK",
+				"VictimName": "Karthus Bot"
+			},
+			{
+				"Acer": "LugnutsK",
+				"AcingTeam": "ORDER",
+				"EventID": 11,
+				"EventName": "Ace",
+				"EventTime": 560.6956176757813
+			},
+			{
+				"Assisters": [],
+				"EventID": 12,
+				"EventName": "ChampionKill",
+				"EventTime": 672.5824584960938,
+				"KillerName": "LugnutsK",
+				"VictimName": "Karthus Bot"
+			},
+			{
+				"Acer": "LugnutsK",
+				"AcingTeam": "ORDER",
+				"EventID": 13,
+				"EventName": "Ace",
+				"EventTime": 672.5824584960938
+			},
+			{
+				"Assisters": [],
+				"EventID": 14,
+				"EventName": "HeraldKill",
+				"EventTime": 751.484619140625,
+				"KillerName": "LugnutsK",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [],
+				"EventID": 15,
+				"EventName": "TurretKilled",
+				"EventTime": 854.9876098632813,
+				"KillerName": "LugnutsK",
+				"TurretKilled": "Turret_T2_C_05_A"
+			},
+			{
+				"EventID": 16,
+				"EventName": "FirstBrick",
+				"EventTime": 854.9876098632813,
+				"KillerName": "LugnutsK"
+			},
+			{
+				"Assisters": [],
+				"EventID": 17,
+				"EventName": "TurretKilled",
+				"EventTime": 888.334228515625,
+				"KillerName": "Minion_T100L1S27N0164",
+				"TurretKilled": "Turret_T2_C_04_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 18,
+				"EventName": "TurretKilled",
+				"EventTime": 904.4713745117188,
+				"KillerName": "LugnutsK",
+				"TurretKilled": "Turret_T2_C_03_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 19,
+				"EventName": "ChampionKill",
+				"EventTime": 911.4490966796875,
+				"KillerName": "LugnutsK",
+				"VictimName": "Karthus Bot"
+			},
+			{
+				"Acer": "LugnutsK",
+				"AcingTeam": "ORDER",
+				"EventID": 20,
+				"EventName": "Ace",
+				"EventTime": 911.4490966796875
+			},
+			{
+				"Assisters": [],
+				"EventID": 21,
+				"EventName": "InhibKilled",
+				"EventTime": 944.654541015625,
+				"InhibKilled": "Barracks_T2_C1",
+				"KillerName": "LugnutsK"
+			},
+			{
+				"Assisters": [],
+				"DragonType": "Earth",
+				"EventID": 22,
+				"EventName": "DragonKill",
+				"EventTime": 975.0684204101563,
+				"KillerName": "LugnutsK",
+				"Stolen": "False"
+			},
+			{
+				"EventID": 23,
+				"EventName": "InhibRespawningSoon",
+				"EventTime": 1229.6507568359376,
+				"InhibRespawningSoon": "Barracks_T2_C1"
+			},
+			{
+				"EventID": 24,
+				"EventName": "InhibRespawned",
+				"EventTime": 1244.69873046875,
+				"InhibRespawned": "Barracks_T2_C1"
+			},
+			{
+				"Assisters": [],
+				"EventID": 25,
+				"EventName": "TurretKilled",
+				"EventTime": 1255.90869140625,
+				"KillerName": "Minion_T100L0S39N0244",
+				"TurretKilled": "Turret_T2_R_03_A"
+			},
+			{
+				"Assisters": [],
+				"DragonType": "Fire",
+				"EventID": 26,
+				"EventName": "DragonKill",
+				"EventTime": 1333.076904296875,
+				"KillerName": "LugnutsK",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [],
+				"EventID": 27,
+				"EventName": "ChampionKill",
+				"EventTime": 1572.1910400390626,
+				"KillerName": "SRU_Baron12.1.1",
+				"VictimName": "LugnutsK"
+			},
+			{
+				"Assisters": [],
+				"EventID": 28,
+				"EventName": "TurretKilled",
+				"EventTime": 1577.7086181640626,
+				"KillerName": "Minion_T200L1S50N0316",
+				"TurretKilled": "Turret_T1_C_05_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 29,
+				"EventName": "TurretKilled",
+				"EventTime": 1652.440673828125,
+				"KillerName": "Minion_T100L2S51N0326",
+				"TurretKilled": "Turret_T2_L_03_A"
+			},
+			{
+				"Assisters": [],
+				"DragonType": "Fire",
+				"EventID": 30,
+				"EventName": "DragonKill",
+				"EventTime": 1674.9488525390626,
+				"KillerName": "LugnutsK",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [],
+				"EventID": 31,
+				"EventName": "ChampionKill",
+				"EventTime": 1706.6033935546876,
+				"KillerName": "LugnutsK",
+				"VictimName": "Karthus Bot"
+			},
+			{
+				"Acer": "LugnutsK",
+				"AcingTeam": "ORDER",
+				"EventID": 32,
+				"EventName": "Ace",
+				"EventTime": 1706.6033935546876
+			},
+			{
+				"Assisters": [],
+				"EventID": 33,
+				"EventName": "TurretKilled",
+				"EventTime": 1876.78955078125,
+				"KillerName": "LugnutsK",
+				"TurretKilled": "Turret_T2_L_02_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 34,
+				"EventName": "ChampionKill",
+				"EventTime": 1944.8475341796876,
+				"KillerName": "LugnutsK",
+				"VictimName": "Karthus Bot"
+			},
+			{
+				"Acer": "LugnutsK",
+				"AcingTeam": "ORDER",
+				"EventID": 35,
+				"EventName": "Ace",
+				"EventTime": 1944.8475341796876
+			},
+			{
+				"Assisters": [],
+				"EventID": 36,
+				"EventName": "InhibKilled",
+				"EventTime": 2009.2139892578126,
+				"InhibKilled": "Barracks_T2_C1",
+				"KillerName": "Minion_T100L1S63N0415"
+			},
+			{
+				"Assisters": [],
+				"EventID": 37,
+				"EventName": "TurretKilled",
+				"EventTime": 2017.7108154296876,
+				"KillerName": "Minion_T100L1S62N0408",
+				"TurretKilled": "Turret_T2_C_01_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 38,
+				"EventName": "TurretKilled",
+				"EventTime": 2045.8468017578126,
+				"KillerName": "Minion_T100L0S65N0425",
+				"TurretKilled": "Turret_T2_R_02_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 39,
+				"EventName": "BaronKill",
+				"EventTime": 2130.960205078125,
+				"KillerName": "LugnutsK",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [],
+				"EventID": 40,
+				"EventName": "TurretKilled",
+				"EventTime": 2156.277099609375,
+				"KillerName": "Minion_T200L2S69N0453",
+				"TurretKilled": "Turret_T1_L_03_A"
+			},
+			{
+				"Assisters": [],
+				"DragonType": "Elder",
+				"EventID": 41,
+				"EventName": "DragonKill",
+				"EventTime": 2168.77685546875,
+				"KillerName": "LugnutsK",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [],
+				"EventID": 42,
+				"EventName": "TurretKilled",
+				"EventTime": 2231.71435546875,
+				"KillerName": "Minion_T100L0S71N0464",
+				"TurretKilled": "Turret_T2_R_01_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 43,
+				"EventName": "ChampionKill",
+				"EventTime": 2236.740234375,
+				"KillerName": "LugnutsK",
+				"VictimName": "Karthus Bot"
+			},
+			{
+				"Acer": "LugnutsK",
+				"AcingTeam": "ORDER",
+				"EventID": 44,
+				"EventName": "Ace",
+				"EventTime": 2236.740234375
+			},
+			{
+				"Assisters": [],
+				"EventID": 45,
+				"EventName": "InhibKilled",
+				"EventTime": 2253.6630859375,
+				"InhibKilled": "Barracks_T2_R1",
+				"KillerName": "LugnutsK"
+			},
+			{
+				"Assisters": [],
+				"EventID": 46,
+				"EventName": "TurretKilled",
+				"EventTime": 2280.132080078125,
+				"KillerName": "Minion_T100L0S73N0475",
+				"TurretKilled": "Turret_T2_C_02_A"
+			}
+		]
+	},
+	"gameData": {
+		"gameMode": "PRACTICETOOL",
+		"gameTime": 2287.94921875,
+		"mapName": "Map11",
+		"mapNumber": 11,
+		"mapTerrain": "Infernal"
+	}
+}

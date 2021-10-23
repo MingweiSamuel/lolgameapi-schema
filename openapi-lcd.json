@@ -1,6 +1,342 @@
 {
   "components": {
     "schemas": {
+      "LiveClientData.AllGameData": {
+        "type": "object",
+        "properties": {
+          "activePlayer": {
+            "$ref": "#/components/schemas/LiveClientData.ActivePlayer"
+          },
+          "allPlayers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LiveClientData.Player"
+            }
+          },
+          "events": {
+            "$ref": "#/components/schemas/LiveClientData.EventData"
+          },
+          "gameData": {
+            "$ref": "#/components/schemas/LiveClientData.GameStats"
+          }
+        },
+        "required": [
+          "activePlayer",
+          "allPlayers",
+          "events",
+          "gameData"
+        ]
+      },
+      "LiveClientData.Ability": {
+        "type": "object",
+        "properties": {
+          "abilityLevel": {
+            "type": "integer"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "rawDescription": {
+            "type": "string"
+          },
+          "rawDisplayName": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "abilityLevel",
+          "displayName",
+          "id",
+          "rawDescription",
+          "rawDisplayName"
+        ]
+      },
+      "LiveClientData.Passive": {
+        "type": "object",
+        "properties": {
+          "displayName": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "rawDescription": {
+            "type": "string"
+          },
+          "rawDisplayName": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "displayName",
+          "id",
+          "rawDescription",
+          "rawDisplayName"
+        ]
+      },
+      "LiveClientData.ActivePlayerAbilities": {
+        "type": "object",
+        "properties": {
+          "E": {
+            "$ref": "#/components/schemas/LiveClientData.Ability"
+          },
+          "Passive": {
+            "$ref": "#/components/schemas/LiveClientData.Passive"
+          },
+          "Q": {
+            "$ref": "#/components/schemas/LiveClientData.Ability"
+          },
+          "R": {
+            "$ref": "#/components/schemas/LiveClientData.Ability"
+          },
+          "W": {
+            "$ref": "#/components/schemas/LiveClientData.Ability"
+          }
+        },
+        "required": [
+          "E",
+          "Passive",
+          "Q",
+          "R",
+          "W"
+        ]
+      },
+      "LiveClientData.PlayerChampionStats": {
+        "type": "object",
+        "properties": {
+          "abilityHaste": {
+            "type": "integer"
+          },
+          "abilityPower": {
+            "type": "number"
+          },
+          "armor": {
+            "type": "number"
+          },
+          "armorPenetrationFlat": {
+            "type": "integer"
+          },
+          "armorPenetrationPercent": {
+            "type": "integer"
+          },
+          "attackDamage": {
+            "type": "number"
+          },
+          "attackRange": {
+            "type": "integer"
+          },
+          "attackSpeed": {
+            "type": "number"
+          },
+          "bonusArmorPenetrationPercent": {
+            "type": "integer"
+          },
+          "bonusMagicPenetrationPercent": {
+            "type": "integer"
+          },
+          "critChance": {
+            "type": "integer"
+          },
+          "critDamage": {
+            "type": "integer"
+          },
+          "currentHealth": {
+            "type": "number"
+          },
+          "healShieldPower": {
+            "type": "integer"
+          },
+          "healthRegenRate": {
+            "type": "number"
+          },
+          "lifeSteal": {
+            "type": "integer"
+          },
+          "magicLethality": {
+            "type": "integer"
+          },
+          "magicPenetrationFlat": {
+            "type": "integer"
+          },
+          "magicPenetrationPercent": {
+            "type": "number"
+          },
+          "magicResist": {
+            "type": "number"
+          },
+          "maxHealth": {
+            "type": "number"
+          },
+          "moveSpeed": {
+            "type": "integer"
+          },
+          "omnivamp": {
+            "type": "integer"
+          },
+          "physicalLethality": {
+            "type": "integer"
+          },
+          "physicalVamp": {
+            "type": "integer"
+          },
+          "resourceMax": {
+            "type": "number"
+          },
+          "resourceRegenRate": {
+            "type": "number"
+          },
+          "resourceType": {
+            "type": "string"
+          },
+          "resourceValue": {
+            "type": "number"
+          },
+          "spellVamp": {
+            "type": "integer"
+          },
+          "tenacity": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "abilityHaste",
+          "abilityPower",
+          "armor",
+          "armorPenetrationFlat",
+          "armorPenetrationPercent",
+          "attackDamage",
+          "attackRange",
+          "attackSpeed",
+          "bonusArmorPenetrationPercent",
+          "bonusMagicPenetrationPercent",
+          "critChance",
+          "critDamage",
+          "currentHealth",
+          "healShieldPower",
+          "healthRegenRate",
+          "lifeSteal",
+          "magicLethality",
+          "magicPenetrationFlat",
+          "magicPenetrationPercent",
+          "magicResist",
+          "maxHealth",
+          "moveSpeed",
+          "omnivamp",
+          "physicalLethality",
+          "physicalVamp",
+          "resourceMax",
+          "resourceRegenRate",
+          "resourceType",
+          "resourceValue",
+          "spellVamp",
+          "tenacity"
+        ]
+      },
+      "LiveClientData.GeneralRune": {
+        "type": "object",
+        "properties": {
+          "displayName": {
+            "type": "string"
+          },
+          "id": {
+            "type": "integer"
+          },
+          "rawDescription": {
+            "type": "string"
+          },
+          "rawDisplayName": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "displayName",
+          "id",
+          "rawDescription",
+          "rawDisplayName"
+        ]
+      },
+      "LiveClientData.StatRune": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "rawDescription": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "rawDescription"
+        ]
+      },
+      "LiveClientData.ActivePlayerRunes": {
+        "type": "object",
+        "properties": {
+          "generalRunes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LiveClientData.GeneralRune"
+            }
+          },
+          "keystone": {
+            "$ref": "#/components/schemas/LiveClientData.GeneralRune"
+          },
+          "primaryRuneTree": {
+            "$ref": "#/components/schemas/LiveClientData.GeneralRune"
+          },
+          "secondaryRuneTree": {
+            "$ref": "#/components/schemas/LiveClientData.GeneralRune"
+          },
+          "statRunes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LiveClientData.StatRune"
+            }
+          }
+        },
+        "required": [
+          "generalRunes",
+          "keystone",
+          "primaryRuneTree",
+          "secondaryRuneTree",
+          "statRunes"
+        ]
+      },
+      "LiveClientData.ActivePlayer": {
+        "type": "object",
+        "properties": {
+          "abilities": {
+            "$ref": "#/components/schemas/LiveClientData.ActivePlayerAbilities"
+          },
+          "championStats": {
+            "$ref": "#/components/schemas/LiveClientData.PlayerChampionStats"
+          },
+          "currentGold": {
+            "type": "number"
+          },
+          "fullRunes": {
+            "$ref": "#/components/schemas/LiveClientData.ActivePlayerRunes"
+          },
+          "level": {
+            "type": "integer"
+          },
+          "summonerName": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "abilities",
+          "championStats",
+          "currentGold",
+          "fullRunes",
+          "level",
+          "summonerName"
+        ]
+      },
       "LiveClientData.PlayerItem": {
         "type": "object",
         "properties": {
@@ -44,40 +380,17 @@
           "slot"
         ]
       },
-      "LiveClientData.PlayerRune": {
-        "type": "object",
-        "properties": {
-          "displayName": {
-            "type": "string"
-          },
-          "id": {
-            "type": "integer"
-          },
-          "rawDescription": {
-            "type": "string"
-          },
-          "rawDisplayName": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "displayName",
-          "id",
-          "rawDescription",
-          "rawDisplayName"
-        ]
-      },
       "LiveClientData.PlayerRunes": {
         "type": "object",
         "properties": {
           "keystone": {
-            "$ref": "#/components/schemas/LiveClientData.PlayerRune"
+            "$ref": "#/components/schemas/LiveClientData.GeneralRune"
           },
           "primaryRuneTree": {
-            "$ref": "#/components/schemas/LiveClientData.PlayerRune"
+            "$ref": "#/components/schemas/LiveClientData.GeneralRune"
           },
           "secondaryRuneTree": {
-            "$ref": "#/components/schemas/LiveClientData.PlayerRune"
+            "$ref": "#/components/schemas/LiveClientData.GeneralRune"
           }
         },
         "required": [
@@ -231,19 +544,25 @@
           "EventTime": {
             "type": "number"
           },
-          "KillerName": {
-            "type": "string"
-          },
-          "TurretKilled": {
-            "type": "string"
-          },
           "Assisters": {
             "type": "array",
             "items": {
               "type": "string"
             }
           },
-          "InhibKilled": {
+          "KillerName": {
+            "type": "string"
+          },
+          "VictimName": {
+            "type": "string"
+          },
+          "Recipient": {
+            "type": "string"
+          },
+          "Acer": {
+            "type": "string"
+          },
+          "AcingTeam": {
             "type": "string"
           },
           "DragonType": {
@@ -252,20 +571,20 @@
           "Stolen": {
             "type": "string"
           },
-          "VictimName": {
+          "TurretKilled": {
+            "type": "string"
+          },
+          "InhibKilled": {
+            "type": "string"
+          },
+          "InhibRespawningSoon": {
+            "type": "string"
+          },
+          "InhibRespawned": {
             "type": "string"
           },
           "KillStreak": {
             "type": "integer"
-          },
-          "Acer": {
-            "type": "string"
-          },
-          "AcingTeam": {
-            "type": "string"
-          },
-          "Result": {
-            "type": "string"
           }
         },
         "required": [
@@ -313,304 +632,6 @@
           "mapName",
           "mapNumber",
           "mapTerrain"
-        ]
-      },
-      "LiveClientData.ActivePlayerAbility": {
-        "type": "object",
-        "properties": {
-          "abilityLevel": {
-            "type": "integer"
-          },
-          "displayName": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
-          "rawDescription": {
-            "type": "string"
-          },
-          "rawDisplayName": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "abilityLevel",
-          "displayName",
-          "id",
-          "rawDescription",
-          "rawDisplayName"
-        ]
-      },
-      "LiveClientData.ActivePlayerPassiveAbility": {
-        "type": "object",
-        "properties": {
-          "displayName": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
-          "rawDescription": {
-            "type": "string"
-          },
-          "rawDisplayName": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "displayName",
-          "id",
-          "rawDescription",
-          "rawDisplayName"
-        ]
-      },
-      "LiveClientData.ActivePlayerAbilities": {
-        "type": "object",
-        "properties": {
-          "Passive": {
-            "$ref": "#/components/schemas/LiveClientData.ActivePlayerPassiveAbility"
-          },
-          "Q": {
-            "$ref": "#/components/schemas/LiveClientData.ActivePlayerAbility"
-          },
-          "W": {
-            "$ref": "#/components/schemas/LiveClientData.ActivePlayerAbility"
-          },
-          "E": {
-            "$ref": "#/components/schemas/LiveClientData.ActivePlayerAbility"
-          },
-          "R": {
-            "$ref": "#/components/schemas/LiveClientData.ActivePlayerAbility"
-          }
-        },
-        "required": [
-          "E",
-          "Passive",
-          "Q",
-          "R",
-          "W"
-        ]
-      },
-      "LiveClientData.ActivePlayerChampionStats": {
-        "type": "object",
-        "properties": {
-          "abilityPower": {
-            "type": "integer"
-          },
-          "armor": {
-            "type": "integer"
-          },
-          "armorPenetrationFlat": {
-            "type": "integer"
-          },
-          "armorPenetrationPercent": {
-            "type": "integer"
-          },
-          "attackDamage": {
-            "type": "number"
-          },
-          "attackRange": {
-            "type": "integer"
-          },
-          "attackSpeed": {
-            "type": "number"
-          },
-          "bonusArmorPenetrationPercent": {
-            "type": "integer"
-          },
-          "bonusMagicPenetrationPercent": {
-            "type": "integer"
-          },
-          "cooldownReduction": {
-            "type": "number"
-          },
-          "critChance": {
-            "type": "integer"
-          },
-          "critDamage": {
-            "type": "integer"
-          },
-          "currentHealth": {
-            "type": "integer"
-          },
-          "healthRegenRate": {
-            "type": "number"
-          },
-          "lifeSteal": {
-            "type": "integer"
-          },
-          "magicLethality": {
-            "type": "integer"
-          },
-          "magicPenetrationFlat": {
-            "type": "integer"
-          },
-          "magicPenetrationPercent": {
-            "type": "integer"
-          },
-          "magicResist": {
-            "type": "integer"
-          },
-          "maxHealth": {
-            "type": "integer"
-          },
-          "moveSpeed": {
-            "type": "integer"
-          },
-          "physicalLethality": {
-            "type": "integer"
-          },
-          "resourceMax": {
-            "type": "integer"
-          },
-          "resourceRegenRate": {
-            "type": "number"
-          },
-          "resourceType": {
-            "type": "string"
-          },
-          "resourceValue": {
-            "type": "integer"
-          },
-          "spellVamp": {
-            "type": "integer"
-          },
-          "tenacity": {
-            "type": "integer"
-          }
-        },
-        "required": [
-          "abilityPower",
-          "armor",
-          "armorPenetrationFlat",
-          "armorPenetrationPercent",
-          "attackDamage",
-          "attackRange",
-          "attackSpeed",
-          "bonusArmorPenetrationPercent",
-          "bonusMagicPenetrationPercent",
-          "cooldownReduction",
-          "critChance",
-          "critDamage",
-          "currentHealth",
-          "healthRegenRate",
-          "lifeSteal",
-          "magicLethality",
-          "magicPenetrationFlat",
-          "magicPenetrationPercent",
-          "magicResist",
-          "maxHealth",
-          "moveSpeed",
-          "physicalLethality",
-          "resourceMax",
-          "resourceRegenRate",
-          "resourceType",
-          "resourceValue",
-          "spellVamp",
-          "tenacity"
-        ]
-      },
-      "LiveClientData.ActivePlayerStatRune": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer"
-          },
-          "rawDescription": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "id",
-          "rawDescription"
-        ]
-      },
-      "LiveClientData.ActivePlayerRunes": {
-        "type": "object",
-        "properties": {
-          "generalRunes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/LiveClientData.PlayerRune"
-            }
-          },
-          "keystone": {
-            "$ref": "#/components/schemas/LiveClientData.PlayerRune"
-          },
-          "primaryRuneTree": {
-            "$ref": "#/components/schemas/LiveClientData.PlayerRune"
-          },
-          "secondaryRuneTree": {
-            "$ref": "#/components/schemas/LiveClientData.PlayerRune"
-          },
-          "statRunes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/LiveClientData.ActivePlayerStatRune"
-            }
-          }
-        },
-        "required": [
-          "generalRunes",
-          "keystone",
-          "primaryRuneTree",
-          "secondaryRuneTree",
-          "statRunes"
-        ]
-      },
-      "LiveClientData.ActivePlayer": {
-        "type": "object",
-        "properties": {
-          "abilities": {
-            "$ref": "#/components/schemas/LiveClientData.ActivePlayerAbilities"
-          },
-          "championStats": {
-            "$ref": "#/components/schemas/LiveClientData.ActivePlayerChampionStats"
-          },
-          "currentGold": {
-            "type": "integer"
-          },
-          "fullRunes": {
-            "$ref": "#/components/schemas/LiveClientData.ActivePlayerRunes"
-          },
-          "level": {
-            "type": "integer"
-          },
-          "summonerName": {
-            "type": "string"
-          },
-          "error": {
-            "type": "string",
-            "description": "If this field is set, it indicates the game client is spectating a game rather than playing a game, so there is no active player. If this field is NOT set, all other fields will be supplied."
-          }
-        },
-        "required": []
-      },
-      "LiveClientData.AllGameData": {
-        "type": "object",
-        "properties": {
-          "activePlayer": {
-            "$ref": "#/components/schemas/LiveClientData.ActivePlayer"
-          },
-          "allPlayers": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/LiveClientData.Player"
-            }
-          },
-          "events": {
-            "$ref": "#/components/schemas/LiveClientData.EventData"
-          },
-          "gameData": {
-            "$ref": "#/components/schemas/LiveClientData.GameStats"
-          }
-        },
-        "required": [
-          "activePlayer",
-          "allPlayers",
-          "events",
-          "gameData"
         ]
       }
     }

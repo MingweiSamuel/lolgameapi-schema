@@ -1,0 +1,225 @@
+{
+	"activePlayer": {
+		"abilities": {
+			"E": {
+				"abilityLevel": 5,
+				"displayName": "Evolved Leap",
+				"id": "KhazixELong",
+				"rawDescription": "GeneratedTip_InheritedSpell_KhazixELong_Description",
+				"rawDisplayName": "GeneratedTip_InheritedSpell_KhazixELong_DisplayName"
+			},
+			"Passive": {
+				"displayName": "Unseen Threat",
+				"id": "KhazixPassive",
+				"rawDescription": "GeneratedTip_Passive_KhazixPassive_Description",
+				"rawDisplayName": "GeneratedTip_Passive_KhazixPassive_DisplayName"
+			},
+			"Q": {
+				"abilityLevel": 5,
+				"displayName": "Evolved Taste Their Fear",
+				"id": "KhazixQLong",
+				"rawDescription": "GeneratedTip_InheritedSpell_KhazixQLong_Description",
+				"rawDisplayName": "GeneratedTip_InheritedSpell_KhazixQLong_DisplayName"
+			},
+			"R": {
+				"abilityLevel": 3,
+				"displayName": "Void Assault",
+				"id": "KhazixR",
+				"rawDescription": "GeneratedTip_Spell_KhazixR_Description",
+				"rawDisplayName": "GeneratedTip_Spell_KhazixR_DisplayName"
+			},
+			"W": {
+				"abilityLevel": 5,
+				"displayName": "Void Spike",
+				"id": "KhazixW",
+				"rawDescription": "GeneratedTip_Spell_KhazixW_Description",
+				"rawDisplayName": "GeneratedTip_Spell_KhazixW_DisplayName"
+			}
+		},
+		"championStats": {
+			"abilityHaste": 8.0,
+			"abilityPower": 0.0,
+			"armor": 93.00000762939453,
+			"armorPenetrationFlat": 0.0,
+			"armorPenetrationPercent": 1.0,
+			"attackDamage": 115.70000457763672,
+			"attackRange": 175.0,
+			"attackSpeed": 0.9746120572090149,
+			"bonusArmorPenetrationPercent": 1.0,
+			"bonusMagicPenetrationPercent": 1.0,
+			"critChance": 0.0,
+			"critDamage": 175.0,
+			"currentHealth": 2158.0,
+			"healShieldPower": 0.0,
+			"healthRegenRate": 4.050000190734863,
+			"lifeSteal": 0.0,
+			"magicLethality": 0.0,
+			"magicPenetrationFlat": 0.0,
+			"magicPenetrationPercent": 1.0,
+			"magicResist": 53.25,
+			"maxHealth": 2158.0,
+			"moveSpeed": 350.0,
+			"omnivamp": 0.0,
+			"physicalLethality": 0.0,
+			"physicalVamp": 0.0,
+			"resourceMax": 1007.0000610351563,
+			"resourceRegenRate": 3.2180001735687258,
+			"resourceType": "MANA",
+			"resourceValue": 1007.0000610351563,
+			"spellVamp": 0.0,
+			"tenacity": 0.0
+		},
+		"currentGold": 60473.22265625,
+		"fullRunes": {
+			"generalRunes": [
+				{
+					"displayName": "Grasp of the Undying",
+					"id": 8437,
+					"rawDescription": "perk_tooltip_GraspOfTheUndying",
+					"rawDisplayName": "perk_displayname_GraspOfTheUndying"
+				},
+				{
+					"displayName": "Font of Life",
+					"id": 8463,
+					"rawDescription": "perk_tooltip_FontOfLife",
+					"rawDisplayName": "perk_displayname_FontOfLife"
+				},
+				{
+					"displayName": "Conditioning",
+					"id": 8429,
+					"rawDescription": "perk_tooltip_Conditioning",
+					"rawDisplayName": "perk_displayname_Conditioning"
+				},
+				{
+					"displayName": "Revitalize",
+					"id": 8453,
+					"rawDescription": "perk_tooltip_Revitalize",
+					"rawDisplayName": "perk_displayname_Revitalize"
+				},
+				{
+					"displayName": "Cosmic Insight",
+					"id": 8347,
+					"rawDescription": "perk_tooltip_CosmicInsight",
+					"rawDisplayName": "perk_displayname_CosmicInsight"
+				},
+				{
+					"displayName": "Magical Footwear",
+					"id": 8304,
+					"rawDescription": "perk_tooltip_MagicalFootwear",
+					"rawDisplayName": "perk_displayname_MagicalFootwear"
+				}
+			],
+			"keystone": {
+				"displayName": "Grasp of the Undying",
+				"id": 8437,
+				"rawDescription": "perk_tooltip_GraspOfTheUndying",
+				"rawDisplayName": "perk_displayname_GraspOfTheUndying"
+			},
+			"primaryRuneTree": {
+				"displayName": "Resolve",
+				"id": 8400,
+				"rawDescription": "perkstyle_tooltip_7204",
+				"rawDisplayName": "perkstyle_displayname_7204"
+			},
+			"secondaryRuneTree": {
+				"displayName": "Inspiration",
+				"id": 8300,
+				"rawDescription": "perkstyle_tooltip_7203",
+				"rawDisplayName": "perkstyle_displayname_7203"
+			},
+			"statRunes": [
+				{
+					"id": 5007,
+					"rawDescription": "perk_tooltip_StatModCooldownReductionScaling"
+				},
+				{
+					"id": 5002,
+					"rawDescription": "perk_tooltip_StatModArmor"
+				},
+				{
+					"id": 5001,
+					"rawDescription": "perk_tooltip_StatModHealthScaling"
+				}
+			]
+		},
+		"level": 18,
+		"summonerName": "DrMeteor"
+	},
+	"allPlayers": [
+		{
+			"championName": "Kha'Zix",
+			"isBot": false,
+			"isDead": false,
+			"items": [],
+			"level": 18,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Khazix",
+			"rawSkinName": "game_character_skin_displayname_Khazix_4",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Grasp of the Undying",
+					"id": 8437,
+					"rawDescription": "perk_tooltip_GraspOfTheUndying",
+					"rawDisplayName": "perk_displayname_GraspOfTheUndying"
+				},
+				"primaryRuneTree": {
+					"displayName": "Resolve",
+					"id": 8400,
+					"rawDescription": "perkstyle_tooltip_7204",
+					"rawDisplayName": "perkstyle_displayname_7204"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Inspiration",
+					"id": 8300,
+					"rawDescription": "perkstyle_tooltip_7203",
+					"rawDisplayName": "perkstyle_displayname_7203"
+				}
+			},
+			"scores": {
+				"assists": 0,
+				"creepScore": 0,
+				"deaths": 0,
+				"kills": 0,
+				"wardScore": 0.0
+			},
+			"skinID": 4,
+			"skinName": "Dark Star Kha'Zix",
+			"summonerName": "DrMeteor",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Smite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerSmite_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSmite_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		}
+	],
+	"events": {
+		"Events": [
+			{
+				"EventID": 0,
+				"EventName": "GameStart",
+				"EventTime": 0.01970990002155304
+			},
+			{
+				"EventID": 1,
+				"EventName": "MinionsSpawning",
+				"EventTime": 65.03056335449219
+			}
+		]
+	},
+	"gameData": {
+		"gameMode": "PRACTICETOOL",
+		"gameTime": 140.5828857421875,
+		"mapName": "Map11",
+		"mapNumber": 11,
+		"mapTerrain": "Default"
+	}
+}

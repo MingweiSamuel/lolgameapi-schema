@@ -1,0 +1,26 @@
+{
+  "name": "lolgameapi-schema",
+  "version": "0.0.0",
+  "description": "https://developer.riotgames.com/docs/lol#game-client-api",
+  "main": "assemble.js",
+  "scripts": {
+    "build": "ts-node src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MingweiSamuel/lolgameapi-schema.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MingweiSamuel/lolgameapi-schema/issues"
+  },
+  "homepage": "https://github.com/MingweiSamuel/lolgameapi-schema#readme",
+  "dependencies": {
+    "genson-js": "^0.0.6"
+  },
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
+}

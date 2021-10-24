@@ -326,16 +326,11 @@
           },
           "summonerName": {
             "type": "string"
+          },
+          "error": {
+            "type": "string"
           }
-        },
-        "required": [
-          "abilities",
-          "championStats",
-          "currentGold",
-          "fullRunes",
-          "level",
-          "summonerName"
-        ]
+        }
       },
       "LiveClientData.PlayerItem": {
         "type": "object",

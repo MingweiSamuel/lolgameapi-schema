@@ -121,7 +121,9 @@ async function main() {
     const dir = path.join(dataDir, LOL_VERSION, 'liveclientdata/allgamedata');
     const files = await fs.readdir(dir);
     const filePromises = files.map(file => fs.readFile(path.join(dir, file), 'utf-8'));
-    const fileObjects = (await Promise.all(filePromises)).map(content => JSON.parse(content));
+    const fileObjects = (await Promise.all(filePromises))
+        .map(content => content.replace(/\.0\b/g, '.0000001')) // Replace 0.0 with 0.0000001 so it will be detected as float.
+        .map(content => JSON.parse(content));
 
     // Create nested schema.
     const schema = createCompoundSchema(fileObjects);

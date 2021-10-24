@@ -1,0 +1,565 @@
+{
+	"activePlayer": {
+		"abilities": {
+			"E": {
+				"abilityLevel": 2,
+				"displayName": "Shuriken Flip",
+				"id": "AkaliE",
+				"rawDescription": "GeneratedTip_Spell_AkaliE_Description",
+				"rawDisplayName": "GeneratedTip_Spell_AkaliE_DisplayName"
+			},
+			"Passive": {
+				"displayName": "Assassin's Mark",
+				"id": "AkaliP",
+				"rawDescription": "GeneratedTip_Passive_AkaliP_Description",
+				"rawDisplayName": "GeneratedTip_Passive_AkaliP_DisplayName"
+			},
+			"Q": {
+				"abilityLevel": 5,
+				"displayName": "Five Point Strike",
+				"id": "AkaliQ",
+				"rawDescription": "GeneratedTip_Spell_AkaliQ_Description",
+				"rawDisplayName": "GeneratedTip_Spell_AkaliQ_DisplayName"
+			},
+			"R": {
+				"abilityLevel": 3,
+				"displayName": "Perfect Execution",
+				"id": "AkaliR",
+				"rawDescription": "GeneratedTip_Spell_AkaliR_Description",
+				"rawDisplayName": "GeneratedTip_Spell_AkaliR_DisplayName"
+			},
+			"W": {
+				"abilityLevel": 3,
+				"displayName": "Twilight Shroud",
+				"id": "AkaliW",
+				"rawDescription": "GeneratedTip_Spell_AkaliW_Description",
+				"rawDisplayName": "GeneratedTip_Spell_AkaliW_DisplayName"
+			}
+		},
+		"championStats": {
+			"abilityHaste": 25.0,
+			"abilityPower": 358.4117431640625,
+			"armor": 123.02000427246094,
+			"armorPenetrationFlat": 0.0,
+			"armorPenetrationPercent": 1.0,
+			"attackDamage": 143.87600708007813,
+			"attackRange": 125.0,
+			"attackSpeed": 1.058150053024292,
+			"bonusArmorPenetrationPercent": 1.0,
+			"bonusMagicPenetrationPercent": 1.0,
+			"critChance": 0.0,
+			"critDamage": 175.0,
+			"currentHealth": 2583.2470703125,
+			"healShieldPower": 0.0,
+			"healthRegenRate": 4.629600524902344,
+			"lifeSteal": 0.0,
+			"magicLethality": 0.0,
+			"magicPenetrationFlat": 0.0,
+			"magicPenetrationPercent": 1.0,
+			"magicResist": 56.650001525878909,
+			"maxHealth": 2583.2470703125,
+			"moveSpeed": 345.0,
+			"omnivamp": 0.09999999403953552,
+			"physicalLethality": 10.0,
+			"physicalVamp": 0.0,
+			"resourceMax": 200.0,
+			"resourceRegenRate": 10.0,
+			"resourceType": "ENERGY",
+			"resourceValue": 200.0,
+			"spellVamp": 0.0,
+			"tenacity": 0.0
+		},
+		"currentGold": 40848.421875,
+		"fullRunes": {
+			"generalRunes": [
+				{
+					"displayName": "Press the Attack",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				{
+					"displayName": "Triumph",
+					"id": 9111,
+					"rawDescription": "perk_tooltip_9111",
+					"rawDisplayName": "perk_displayname_9111"
+				},
+				{
+					"displayName": "Legend: Alacrity",
+					"id": 9104,
+					"rawDescription": "perk_tooltip_9104",
+					"rawDisplayName": "perk_displayname_9104"
+				},
+				{
+					"displayName": "Coup de Grace",
+					"id": 8014,
+					"rawDescription": "perk_tooltip_CoupDeGrace",
+					"rawDisplayName": "perk_displayname_CoupDeGrace"
+				},
+				{
+					"displayName": "Absolute Focus",
+					"id": 8233,
+					"rawDescription": "perk_tooltip_8233",
+					"rawDisplayName": "perk_displayname_8233"
+				},
+				{
+					"displayName": "Gathering Storm",
+					"id": 8236,
+					"rawDescription": "perk_tooltip_GatheringStorm",
+					"rawDisplayName": "perk_displayname_GatheringStorm"
+				}
+			],
+			"keystone": {
+				"displayName": "Press the Attack",
+				"id": 8005,
+				"rawDescription": "perk_tooltip_PressTheAttack",
+				"rawDisplayName": "perk_displayname_PressTheAttack"
+			},
+			"primaryRuneTree": {
+				"displayName": "Precision",
+				"id": 8000,
+				"rawDescription": "perkstyle_tooltip_7201",
+				"rawDisplayName": "perkstyle_displayname_7201"
+			},
+			"secondaryRuneTree": {
+				"displayName": "Sorcery",
+				"id": 8200,
+				"rawDescription": "perkstyle_tooltip_7202",
+				"rawDisplayName": "perkstyle_displayname_7202"
+			},
+			"statRunes": [
+				{
+					"id": 5005,
+					"rawDescription": "perk_tooltip_StatModAttackSpeed"
+				},
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5001,
+					"rawDescription": "perk_tooltip_StatModHealthScaling"
+				}
+			]
+		},
+		"level": 17,
+		"summonerName": "LugnutsK"
+	},
+	"allPlayers": [
+		{
+			"championName": "Akali",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Riftmaker",
+					"itemID": 4633,
+					"price": 1050,
+					"rawDescription": "GeneratedTip_Item_4633_Description",
+					"rawDisplayName": "Item_4633_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Serrated Dirk",
+					"itemID": 3134,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3134_Description",
+					"rawDisplayName": "Item_3134_Name",
+					"slot": 1
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Zhonya's Hourglass",
+					"itemID": 3157,
+					"price": 50,
+					"rawDescription": "GeneratedTip_Item_3157_Description",
+					"rawDisplayName": "Item_3157_Name",
+					"slot": 2
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 17,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Akali",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Press the Attack",
+					"id": 8005,
+					"rawDescription": "perk_tooltip_PressTheAttack",
+					"rawDisplayName": "perk_displayname_PressTheAttack"
+				},
+				"primaryRuneTree": {
+					"displayName": "Precision",
+					"id": 8000,
+					"rawDescription": "perkstyle_tooltip_7201",
+					"rawDisplayName": "perkstyle_displayname_7201"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 0,
+				"creepScore": 70,
+				"deaths": 0,
+				"kills": 1,
+				"wardScore": 13.566033363342286
+			},
+			"skinID": 0,
+			"summonerName": "LugnutsK",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		},
+		{
+			"championName": "Ryze",
+			"isBot": true,
+			"isDead": true,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Tear of the Goddess",
+					"itemID": 3070,
+					"price": 400,
+					"rawDescription": "GeneratedTip_Item_3070_Description",
+					"rawDisplayName": "Item_3070_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Ionian Boots of Lucidity",
+					"itemID": 3158,
+					"price": 650,
+					"rawDescription": "GeneratedTip_Item_3158_Description",
+					"rawDisplayName": "Item_3158_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Luden's Tempest",
+					"itemID": 6655,
+					"price": 1050,
+					"rawDescription": "GeneratedTip_Item_6655_Description",
+					"rawDisplayName": "Item_6655_Name",
+					"slot": 2
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Amplifying Tome",
+					"itemID": 1052,
+					"price": 435,
+					"rawDescription": "GeneratedTip_Item_1052_Description",
+					"rawDisplayName": "Item_1052_Name",
+					"slot": 3
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Ryze",
+			"respawnTimer": 60.09272384643555,
+			"runes": {
+				"keystone": {
+					"displayName": "Arcane Comet",
+					"id": 8229,
+					"rawDescription": "perk_tooltip_ArcaneComet",
+					"rawDisplayName": "perk_displayname_ArcaneComet"
+				},
+				"primaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				}
+			},
+			"scores": {
+				"assists": 0,
+				"creepScore": 30,
+				"deaths": 1,
+				"kills": 0,
+				"wardScore": 0.0
+			},
+			"skinID": 0,
+			"summonerName": "Ryze Bot",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Ignite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerDot_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerDot_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Exhaust",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerExhaust_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerExhaust_DisplayName"
+				}
+			},
+			"team": "CHAOS"
+		}
+	],
+	"events": {
+		"Events": [
+			{
+				"EventID": 0,
+				"EventName": "GameStart",
+				"EventTime": 0.031387001276016238
+			},
+			{
+				"EventID": 1,
+				"EventName": "MinionsSpawning",
+				"EventTime": 66.15884399414063
+			},
+			{
+				"Assisters": [],
+				"EventID": 2,
+				"EventName": "TurretKilled",
+				"EventTime": 921.2675170898438,
+				"KillerName": "Minion_T200L2S13N0077",
+				"TurretKilled": "Turret_T1_L_03_A"
+			},
+			{
+				"EventID": 3,
+				"EventName": "FirstBrick",
+				"EventTime": 921.2675170898438,
+				"KillerName": "Minion_T200L2S13N0077"
+			},
+			{
+				"Assisters": [],
+				"EventID": 4,
+				"EventName": "TurretKilled",
+				"EventTime": 1126.693115234375,
+				"KillerName": "Minion_T200L1S24N0145",
+				"TurretKilled": "Turret_T1_C_05_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 5,
+				"EventName": "TurretKilled",
+				"EventTime": 1253.048828125,
+				"KillerName": "Minion_T100L0S20N0124",
+				"TurretKilled": "Turret_T2_R_03_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 6,
+				"EventName": "TurretKilled",
+				"EventTime": 1267.045166015625,
+				"KillerName": "Minion_T200L2S30N0182",
+				"TurretKilled": "Turret_T1_L_02_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 7,
+				"EventName": "TurretKilled",
+				"EventTime": 1307.58544921875,
+				"KillerName": "Minion_T200L1S37N0229",
+				"TurretKilled": "Turret_T1_C_04_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 8,
+				"EventName": "TurretKilled",
+				"EventTime": 1314.779296875,
+				"KillerName": "Minion_T200L2S29N0193",
+				"TurretKilled": "Turret_T1_C_06_A"
+			},
+			{
+				"Assisters": [],
+				"EventID": 9,
+				"EventName": "InhibKilled",
+				"EventTime": 1329.802001953125,
+				"InhibKilled": "Barracks_T1_L1",
+				"KillerName": "Minion_T200L2S33N0204"
+			},
+			{
+				"EventID": 10,
+				"EventName": "InhibRespawningSoon",
+				"EventTime": 1614.806640625,
+				"InhibRespawningSoon": "Barracks_T1_L1"
+			},
+			{
+				"EventID": 11,
+				"EventName": "InhibRespawned",
+				"EventTime": 1629.8402099609376,
+				"InhibRespawned": "Barracks_T1_L1"
+			},
+			{
+				"Assisters": [],
+				"EventID": 12,
+				"EventName": "InhibKilled",
+				"EventTime": 1682.4603271484376,
+				"InhibKilled": "Barracks_T1_L1",
+				"KillerName": "Minion_T200L2S51N0331"
+			},
+			{
+				"EventID": 13,
+				"EventName": "InhibRespawningSoon",
+				"EventTime": 1968.2435302734376,
+				"InhibRespawningSoon": "Barracks_T1_L1"
+			},
+			{
+				"EventID": 14,
+				"EventName": "InhibRespawned",
+				"EventTime": 1987.2928466796876,
+				"InhibRespawned": "Barracks_T1_L1"
+			},
+			{
+				"Assisters": [],
+				"EventID": 15,
+				"EventName": "InhibKilled",
+				"EventTime": 2141.37890625,
+				"InhibKilled": "Barracks_T1_L1",
+				"KillerName": "Minion_T200L2S59N0388"
+			},
+			{
+				"EventID": 16,
+				"EventName": "InhibRespawningSoon",
+				"EventTime": 2425.099365234375,
+				"InhibRespawningSoon": "Barracks_T1_L1"
+			},
+			{
+				"EventID": 17,
+				"EventName": "InhibRespawned",
+				"EventTime": 2444.47509765625,
+				"InhibRespawned": "Barracks_T1_L1"
+			},
+			{
+				"Assisters": [],
+				"EventID": 18,
+				"EventName": "InhibKilled",
+				"EventTime": 2492.98486328125,
+				"InhibKilled": "Barracks_T1_L1",
+				"KillerName": "Minion_T200L2S73N0483"
+			},
+			{
+				"EventID": 19,
+				"EventName": "InhibRespawningSoon",
+				"EventTime": 2777.790771484375,
+				"InhibRespawningSoon": "Barracks_T1_L1"
+			},
+			{
+				"EventID": 20,
+				"EventName": "InhibRespawned",
+				"EventTime": 2798.164794921875,
+				"InhibRespawned": "Barracks_T1_L1"
+			},
+			{
+				"Assisters": [],
+				"EventID": 21,
+				"EventName": "InhibKilled",
+				"EventTime": 3129.617431640625,
+				"InhibKilled": "Barracks_T1_L1",
+				"KillerName": "Minion_T200L2S84N0553"
+			},
+			{
+				"EventID": 22,
+				"EventName": "InhibRespawningSoon",
+				"EventTime": 3412.62744140625,
+				"InhibRespawningSoon": "Barracks_T1_L1"
+			},
+			{
+				"EventID": 23,
+				"EventName": "InhibRespawned",
+				"EventTime": 3435.487060546875,
+				"InhibRespawned": "Barracks_T1_L1"
+			},
+			{
+				"Assisters": [],
+				"EventID": 24,
+				"EventName": "InhibKilled",
+				"EventTime": 3560.657470703125,
+				"InhibKilled": "Barracks_T1_L1",
+				"KillerName": "Minion_T200L2S101N0647"
+			},
+			{
+				"Assisters": [],
+				"EventID": 25,
+				"EventName": "ChampionKill",
+				"EventTime": 3587.291748046875,
+				"KillerName": "LugnutsK",
+				"VictimName": "Ryze Bot"
+			},
+			{
+				"EventID": 26,
+				"EventName": "FirstBlood",
+				"EventTime": 3587.291748046875,
+				"Recipient": "LugnutsK"
+			},
+			{
+				"Acer": "LugnutsK",
+				"AcingTeam": "ORDER",
+				"EventID": 27,
+				"EventName": "Ace",
+				"EventTime": 3587.291748046875
+			},
+			{
+				"EventID": 28,
+				"EventName": "GameEnd",
+				"EventTime": 3605.24853515625,
+				"Result": "Lose"
+			}
+		]
+	},
+	"gameData": {
+		"gameMode": "PRACTICETOOL",
+		"gameTime": 3605.948974609375,
+		"mapName": "Map11",
+		"mapNumber": 11,
+		"mapTerrain": "Default"
+	}
+}

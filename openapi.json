@@ -108,7 +108,7 @@
         "type": "object",
         "properties": {
           "abilityHaste": {
-            "type": "integer"
+            "type": "number"
           },
           "abilityPower": {
             "type": "number"
@@ -117,49 +117,49 @@
             "type": "number"
           },
           "armorPenetrationFlat": {
-            "type": "integer"
+            "type": "number"
           },
           "armorPenetrationPercent": {
-            "type": "integer"
+            "type": "number"
           },
           "attackDamage": {
             "type": "number"
           },
           "attackRange": {
-            "type": "integer"
+            "type": "number"
           },
           "attackSpeed": {
             "type": "number"
           },
           "bonusArmorPenetrationPercent": {
-            "type": "integer"
+            "type": "number"
           },
           "bonusMagicPenetrationPercent": {
-            "type": "integer"
+            "type": "number"
           },
           "critChance": {
-            "type": "integer"
+            "type": "number"
           },
           "critDamage": {
-            "type": "integer"
+            "type": "number"
           },
           "currentHealth": {
             "type": "number"
           },
           "healShieldPower": {
-            "type": "integer"
+            "type": "number"
           },
           "healthRegenRate": {
             "type": "number"
           },
           "lifeSteal": {
-            "type": "integer"
+            "type": "number"
           },
           "magicLethality": {
-            "type": "integer"
+            "type": "number"
           },
           "magicPenetrationFlat": {
-            "type": "integer"
+            "type": "number"
           },
           "magicPenetrationPercent": {
             "type": "number"
@@ -171,16 +171,16 @@
             "type": "number"
           },
           "moveSpeed": {
-            "type": "integer"
+            "type": "number"
           },
           "omnivamp": {
-            "type": "integer"
+            "type": "number"
           },
           "physicalLethality": {
-            "type": "integer"
+            "type": "number"
           },
           "physicalVamp": {
-            "type": "integer"
+            "type": "number"
           },
           "resourceMax": {
             "type": "number"
@@ -195,10 +195,10 @@
             "type": "number"
           },
           "spellVamp": {
-            "type": "integer"
+            "type": "number"
           },
           "tenacity": {
-            "type": "integer"
+            "type": "number"
           }
         },
         "required": [
@@ -576,6 +576,9 @@
             "type": "string"
           },
           "InhibRespawned": {
+            "type": "string"
+          },
+          "Result": {
             "type": "string"
           },
           "KillStreak": {

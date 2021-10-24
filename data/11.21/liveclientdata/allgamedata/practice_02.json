@@ -1,0 +1,334 @@
+{
+	"activePlayer": {
+		"abilities": {
+			"E": {
+				"abilityLevel": 5,
+				"displayName": "Evolved Leap",
+				"id": "KhazixELong",
+				"rawDescription": "GeneratedTip_InheritedSpell_KhazixELong_Description",
+				"rawDisplayName": "GeneratedTip_InheritedSpell_KhazixELong_DisplayName"
+			},
+			"Passive": {
+				"displayName": "Unseen Threat",
+				"id": "KhazixPassive",
+				"rawDescription": "GeneratedTip_Passive_KhazixPassive_Description",
+				"rawDisplayName": "GeneratedTip_Passive_KhazixPassive_DisplayName"
+			},
+			"Q": {
+				"abilityLevel": 5,
+				"displayName": "Evolved Taste Their Fear",
+				"id": "KhazixQLong",
+				"rawDescription": "GeneratedTip_InheritedSpell_KhazixQLong_Description",
+				"rawDisplayName": "GeneratedTip_InheritedSpell_KhazixQLong_DisplayName"
+			},
+			"R": {
+				"abilityLevel": 3,
+				"displayName": "Void Assault",
+				"id": "KhazixR",
+				"rawDescription": "GeneratedTip_Spell_KhazixR_Description",
+				"rawDisplayName": "GeneratedTip_Spell_KhazixR_DisplayName"
+			},
+			"W": {
+				"abilityLevel": 5,
+				"displayName": "Void Spike",
+				"id": "KhazixW",
+				"rawDescription": "GeneratedTip_Spell_KhazixW_Description",
+				"rawDisplayName": "GeneratedTip_Spell_KhazixW_DisplayName"
+			}
+		},
+		"championStats": {
+			"abilityHaste": 85.0,
+			"abilityPower": 0.0,
+			"armor": 87.00000762939453,
+			"armorPenetrationFlat": 0.0,
+			"armorPenetrationPercent": 1.0,
+			"attackDamage": 401.5,
+			"attackRange": 175.0,
+			"attackSpeed": 0.9746120572090149,
+			"bonusArmorPenetrationPercent": 1.0,
+			"bonusMagicPenetrationPercent": 1.0,
+			"critChance": 0.20000000298023225,
+			"critDamage": 175.0,
+			"currentHealth": 2343.0,
+			"healShieldPower": 0.0,
+			"healthRegenRate": 46.2239990234375,
+			"lifeSteal": 0.0,
+			"magicLethality": 0.0,
+			"magicPenetrationFlat": 0.0,
+			"magicPenetrationPercent": 1.0,
+			"magicResist": 61.25,
+			"maxHealth": 2343.0,
+			"moveSpeed": 431.0,
+			"omnivamp": 0.0,
+			"physicalLethality": 70.0,
+			"physicalVamp": 0.0,
+			"resourceMax": 1007.0000610351563,
+			"resourceRegenRate": 18.288000106811525,
+			"resourceType": "MANA",
+			"resourceValue": 1007.0000610351563,
+			"spellVamp": 0.0,
+			"tenacity": 0.0
+		},
+		"currentGold": 10995.06640625,
+		"fullRunes": {
+			"generalRunes": [
+				{
+					"displayName": "Electrocute",
+					"id": 8112,
+					"rawDescription": "perk_tooltip_Electrocute",
+					"rawDisplayName": "perk_displayname_Electrocute"
+				},
+				{
+					"displayName": "Sudden Impact",
+					"id": 8143,
+					"rawDescription": "perk_tooltip_SuddenImpact",
+					"rawDisplayName": "perk_displayname_SuddenImpact"
+				},
+				{
+					"displayName": "Eyeball Collection",
+					"id": 8138,
+					"rawDescription": "perk_tooltip_EyeballCollection",
+					"rawDisplayName": "perk_displayname_EyeballCollection"
+				},
+				{
+					"displayName": "Ultimate Hunter",
+					"id": 8106,
+					"rawDescription": "perk_tooltip_UltimateHunter",
+					"rawDisplayName": "perk_displayname_UltimateHunter"
+				},
+				{
+					"displayName": "Nimbus Cloak",
+					"id": 8275,
+					"rawDescription": "perk_tooltip_NimbusCloak",
+					"rawDisplayName": "perk_displayname_NimbusCloak"
+				},
+				{
+					"displayName": "Gathering Storm",
+					"id": 8236,
+					"rawDescription": "perk_tooltip_GatheringStorm",
+					"rawDisplayName": "perk_displayname_GatheringStorm"
+				}
+			],
+			"keystone": {
+				"displayName": "Electrocute",
+				"id": 8112,
+				"rawDescription": "perk_tooltip_Electrocute",
+				"rawDisplayName": "perk_displayname_Electrocute"
+			},
+			"primaryRuneTree": {
+				"displayName": "Domination",
+				"id": 8100,
+				"rawDescription": "perkstyle_tooltip_7200",
+				"rawDisplayName": "perkstyle_displayname_7200"
+			},
+			"secondaryRuneTree": {
+				"displayName": "Sorcery",
+				"id": 8200,
+				"rawDescription": "perkstyle_tooltip_7202",
+				"rawDisplayName": "perkstyle_displayname_7202"
+			},
+			"statRunes": [
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5008,
+					"rawDescription": "perk_tooltip_StatModAdaptive"
+				},
+				{
+					"id": 5003,
+					"rawDescription": "perk_tooltip_StatModMagicResist"
+				}
+			]
+		},
+		"level": 18,
+		"summonerName": "DrMeteor"
+	},
+	"allPlayers": [
+		{
+			"championName": "Kha'Zix",
+			"isBot": false,
+			"isDead": false,
+			"items": [
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Duskblade of Draktharr",
+					"itemID": 6691,
+					"price": 1000,
+					"rawDescription": "GeneratedTip_Item_6691_Description",
+					"rawDisplayName": "Item_6691_Name",
+					"slot": 0
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Edge of Night",
+					"itemID": 3814,
+					"price": 1050,
+					"rawDescription": "GeneratedTip_Item_3814_Description",
+					"rawDisplayName": "Item_3814_Name",
+					"slot": 1
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "The Collector",
+					"itemID": 6676,
+					"price": 425,
+					"rawDescription": "GeneratedTip_Item_6676_Description",
+					"rawDisplayName": "Item_6676_Name",
+					"slot": 2
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Youmuu's Ghostblade",
+					"itemID": 3142,
+					"price": 700,
+					"rawDescription": "GeneratedTip_Item_3142_Description",
+					"rawDisplayName": "Item_3142_Name",
+					"slot": 3
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Serpent's Fang",
+					"itemID": 6695,
+					"price": 625,
+					"rawDescription": "GeneratedTip_Item_6695_Description",
+					"rawDisplayName": "Item_6695_Name",
+					"slot": 4
+				},
+				{
+					"canUse": false,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Ionian Boots of Lucidity",
+					"itemID": 3158,
+					"price": 650,
+					"rawDescription": "GeneratedTip_Item_3158_Description",
+					"rawDisplayName": "Item_3158_Name",
+					"slot": 5
+				},
+				{
+					"canUse": true,
+					"consumable": false,
+					"count": 1,
+					"displayName": "Stealth Ward",
+					"itemID": 3340,
+					"price": 0,
+					"rawDescription": "GeneratedTip_Item_3340_Description",
+					"rawDisplayName": "Item_3340_Name",
+					"slot": 6
+				}
+			],
+			"level": 18,
+			"position": "",
+			"rawChampionName": "game_character_displayname_Khazix",
+			"rawSkinName": "game_character_skin_displayname_Khazix_4",
+			"respawnTimer": 0.0,
+			"runes": {
+				"keystone": {
+					"displayName": "Electrocute",
+					"id": 8112,
+					"rawDescription": "perk_tooltip_Electrocute",
+					"rawDisplayName": "perk_displayname_Electrocute"
+				},
+				"primaryRuneTree": {
+					"displayName": "Domination",
+					"id": 8100,
+					"rawDescription": "perkstyle_tooltip_7200",
+					"rawDisplayName": "perkstyle_displayname_7200"
+				},
+				"secondaryRuneTree": {
+					"displayName": "Sorcery",
+					"id": 8200,
+					"rawDescription": "perkstyle_tooltip_7202",
+					"rawDisplayName": "perkstyle_displayname_7202"
+				}
+			},
+			"scores": {
+				"assists": 0,
+				"creepScore": 120,
+				"deaths": 0,
+				"kills": 0,
+				"wardScore": 2.25
+			},
+			"skinID": 4,
+			"skinName": "Dark Star Kha'Zix",
+			"summonerName": "DrMeteor",
+			"summonerSpells": {
+				"summonerSpellOne": {
+					"displayName": "Flash",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerFlash_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerFlash_DisplayName"
+				},
+				"summonerSpellTwo": {
+					"displayName": "Smite",
+					"rawDescription": "GeneratedTip_SummonerSpell_SummonerSmite_Description",
+					"rawDisplayName": "GeneratedTip_SummonerSpell_SummonerSmite_DisplayName"
+				}
+			},
+			"team": "ORDER"
+		}
+	],
+	"events": {
+		"Events": [
+			{
+				"EventID": 0,
+				"EventName": "GameStart",
+				"EventTime": 0.02188129909336567
+			},
+			{
+				"EventID": 1,
+				"EventName": "MinionsSpawning",
+				"EventTime": 65.03199005126953
+			},
+			{
+				"Assisters": [],
+				"EventID": 2,
+				"EventName": "TurretKilled",
+				"EventTime": 290.8241882324219,
+				"KillerName": "DrMeteor",
+				"TurretKilled": "Turret_T2_L_03_A"
+			},
+			{
+				"EventID": 3,
+				"EventName": "FirstBrick",
+				"EventTime": 290.8241882324219,
+				"KillerName": "DrMeteor"
+			},
+			{
+				"Assisters": [],
+				"DragonType": "Water",
+				"EventID": 4,
+				"EventName": "DragonKill",
+				"EventTime": 323.1292724609375,
+				"KillerName": "DrMeteor",
+				"Stolen": "False"
+			},
+			{
+				"Assisters": [],
+				"EventID": 5,
+				"EventName": "TurretKilled",
+				"EventTime": 444.2792663574219,
+				"KillerName": "DrMeteor",
+				"TurretKilled": "Turret_T2_R_03_A"
+			}
+		]
+	},
+	"gameData": {
+		"gameMode": "PRACTICETOOL",
+		"gameTime": 542.0155029296875,
+		"mapName": "Map11",
+		"mapNumber": 11,
+		"mapTerrain": "Default"
+	}
+}
